@@ -273,7 +273,7 @@ p + h3 {
 /* thumbnail hover effects */
 
 #img-first, #img-second, #img-third, #img-fourth, #img-fifth, #img-sixth, #img-seventh, #img-eighth {
-  border-radius: 2px;
+  border-radius: 1px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -296,10 +296,10 @@ p + h3 {
   height: 100%;
   overflow: auto;
   background-color: rgb(0,0,0);
-  background-color: (0,0,0,0.9);
+  background-color: rgba(0,0,0,0.9);
 }
 /* second */
-.modal2 {
+/* .modal2 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -311,9 +311,9 @@ p + h3 {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: (0,0,0,0.9);
-}
+} */
 /* third */
-.modal3 {
+/* .modal3 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -325,9 +325,9 @@ p + h3 {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: (0,0,0,0.9);
-}
+} */
 /* fourth */
-.modal4 {
+/* .modal4 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -339,9 +339,9 @@ p + h3 {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: (0,0,0,0.9);
-}
+} */
 /* fifth */
-.modal5 {
+/* .modal5 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -353,9 +353,9 @@ p + h3 {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: (0,0,0,0.9);
-}
+} */
 /* sexth */
-.modal6 {
+/* .modal6 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -367,9 +367,9 @@ p + h3 {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: (0,0,0,0.9);
-}
+} */
 /* seventh */
-.modal7 {
+/* .modal7 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -380,10 +380,10 @@ p + h3 {
   height: 100%;
   overflow: auto;
   background-color: rgb(0,0,0);
-  background-color: (0,0,0,0.9);
+  background-color: (0,0,0,0.9); */
 }
 /* eighth */
-.modal8 {
+/* .modal8 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -395,7 +395,7 @@ p + h3 {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: (0,0,0,0.9);
-}
+} */
 
 /* Modal content (image) */
 .modal-inner1 {
@@ -404,13 +404,13 @@ p + h3 {
   width: 80%;
   max-width: 700px;
 }
-.modal-inner2 {
+/* .modal-inner2 {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
-}
-.modal-inner3 {
+} */
+/* .modal-inner3 {
   margin: auto;
   display: block;
   width: 80%;
@@ -445,10 +445,10 @@ p + h3 {
   display: block;
   width: 80%;
   max-width: 700px;
-}
+} */
 
 /* Caption of Modal image */
-#caption1 {
+#caption {
   margin: auto;
   display: block;
   width: 80%;
@@ -458,7 +458,7 @@ p + h3 {
   padding: 10px 0;
   height: 150px;
 }
-#caption2 {
+/* #caption2 {
   margin: auto;
   display: block;
   width: 80%;
@@ -527,13 +527,14 @@ p + h3 {
   color: #ccc;
   padding: 10px 0;
   height: 150px;
-}
+} */
 
 /* Add Animation */
-modal-inner, #caption {
-  animation-name: zoom
+.modal-inner1, #caption {
+  animation-name: zoom;
   animation-duration: 0.6s;
 }
+
 @keyframes zoom {
   from {transform: scale(0.1)}
   to {transform: scale(1)}
@@ -652,7 +653,7 @@ modal-inner, #caption {
 }
 
 @media only screen and (max-width: 700px) {
-  .modal-inner {
+  .modal-inner1 {
     width: 100%;
   }
 }
