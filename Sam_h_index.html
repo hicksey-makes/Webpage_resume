@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Hicks | Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Arsenal|Cabin:600i|Crimson+Text:600i" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/cStyleSedit.css">
+</head>
+
+<body>
+    <!-- // Intro -->
+
+    <header id="About">
+        <a href=Indexsam(html)%20(1).pdf class="btn download" download> Download PDF</a>
+        <nav>
+            <a href="#About">About</a>
+            <a href="#Work">Work Experience</a>
+            <a href="#Education">Education</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+        <div class= "content-wrap heading">
+          <div class="prof-pic">
+            <img class="profile" src="images/railjamm.jpg" alt="Sam Hicks">
+          </div>
+
+            <div class="missions">
+                <h1>Sam Hicks</h1>
+                <h2>Front-End Web Developer</h2>
+                <p>Very detail-oriented, with an engineering foundation, I have found web development to be an exciting combination of analytical, problem-solving and creative skill-sets. Building upon a robust foundation of mathematics, science, and computer operation, I'm utilizing the Linkedin-learning (formerly Lynda.com&reg;) platform. I'm soon to finish the learning path: Become a Front-End Web Developer. I'm a fast learner and use the words motivating, intelligent and diplomatic to describe my professional character. Entry-level developer, I.T. support and internships are fits for my abilities and aspirations.
+                </p>
+            </div>
+
+        </div>
+     </header>
+
+     <main>
+
+
+        <!--- // Work Experience --->
+
+        <section class="work" id="Work">
+          <div class="content-wrap">
+              <h2>Work Experience</h2>
+                <!-- Job 1 Details--->
+
+              <div class="col-narrow">
+                <h3>Rideshare Driver</h3>
+                  <p class="Ucase">Lyft/Uber</p>
+                  <p>October 2016 - Present</p>
+              </div>
+
+              <div class="col-wide job-description">
+                  <p>Accomplishments:</p>
+                    <ul>
+                      <li>4.95 rating.
+                      </li>
+                      <li>3,500 lifetime rides.
+                      </li>
+                    </ul>
+              </div>
+                <!-- Job 2 Details--->
+
+              <div class="col-narrow">
+                <h3>Sales Associate</h3>
+                  <p class="Ucase">2020 Companies</p>
+                  <p>August - November 2017</p>
+              </div>
+
+              <div class="col-wide job-description">
+                <p>Accomplishments:</p>
+                  <ul>
+                    <li class="training">Complimented to management by colleagues.</li>
+                    <li class="training">Progressed through program extension for exemplary performance.</li>
+                  </ul>
+              </div>
+
+              <div class="col-narrow">
+                <h3>Sales Associate</h3>
+                  <p class="Ucase">Jiffy Lube</p>
+                  <p>February - August 2017</p>
+              </div>
+
+              <div class="col-wide job-description">
+                <p>Accomplishments:</p>
+                  <ul>
+                    <li>Exceeded company salesperson standard of $80/customer ticket average.
+                    </li>
+                    <li>Recognized for laudable performance with trip to nuggets game.
+                    </li>
+                  </ul>
+              </div>
+
+              <div class="col-narrow">
+                <h3>Vitamin Clerk</h3>
+                  <p class="Ucase">Sprouts Farmers Market</p>
+                  <p>May 2012 - July 2014</p>
+              </div>
+
+              <div class="col-wide job-description">
+                <p>Accomplishments:</p>
+                  <ul>
+                    <li>Passed all secret-shop evaluations (including twice at 100%).
+                    </li>
+                    <li>2x service-star recognized.
+                    </li>
+                    <li>Designated as point-person in absence of manager (despite my new nature).
+                    </li>
+                    <li>Contributed to store-vitamin department [daily and weekly] sales record.
+                    </li>
+                  </ul>
+              </div>
+
+          </div>
+        </section>
+
+
+        <!-- // Education -->
+
+        <section class="education" id="Education">
+          <div class="content-wrap">
+          <h2>Education</h2>
+            <!-- School details: copy this whole block to add more schools. -->
+
+            <div class="container">
+              <div class="item">
+                <h3 class="tighten">University of Colorado @ Boulder - Boulder, CO</h3>
+                  <h4>Lower-level-mechanical engineering studies, 2008 - 2011.</h4>
+                    <p>Junior &amp; below-level engineering, math, science and humanities:</p>
+              </div>
+
+              <div class="item">
+                <ul>
+                    <li class="courses">Intro to Projects</li>
+                    <li class="courses">Calculus 1, 2 &amp; 3</li>
+                    <li class="courses">Differential Equations &amp; Applied Linear Algebra</li>
+                    <li class="courses">Physics 1 (physical), 2 (electromag), &amp; 3 (quantum theory)</li>
+                    <li class="courses">Experimental Physics (lab)</li>
+                    <li class="courses">General Chemistry for Engineers</li>
+                    <li class="courses">Dynamics</li>
+                    <li class="courses">Mechanics: drill powered vehicle</li>
+                    <li class="courses">Scientific Computing in Matlab</li>
+                    <li class="courses">Social Impact of Technology</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h3 class="tighten">LinkedIn-Learning&reg; - Remote</h3>
+                  <h4>Learning Path: Become a Front-End Web Developer, 2018 - Present.</h4>
+                    <p>Course certificates of completion:</p>
+              </div>
+
+              <div class="item">
+                <div class="container2">
+                <ul class="item shrink1">
+                    <li class="courses">Programming Foundations: Fundamentals</li>
+
+                    <li class="courses">Learning Git &amp; GitHub</li>
+                    <li class="courses">Python Essential Training</li>
+                    <li class="courses">HTML Essential Training</li>
+                    <li class="courses">CSS Essential Training[s] 1, 2 &amp; 3</li>
+                    <li class="courses">JavaScript Essential Training</li>
+                    <li class="courses">Web Development Foundations: Full-Stack vs Front-End</li>
+
+
+                </ul>
+                <ul class="item shrink2">
+                    <li class="courses">User Experience for Web Design</li>
+                    <li class="courses">Responsive Images</li>
+                    <li class="courses">Learning Responsive Design</li>
+                    <li class="courses">Responsive Layout</li>
+                    <li class="courses">UX Foundations: Accessibility</li>
+                    <li class="courses">Sass Essential Training</li>
+                    <li class="courses">Bootstrap 4 Essential Training</li>
+
+                    <li class="courses">Learning VPN</li>
+                </ul>
+                </div>
+              </div>
+             </div>
+          </div>
+
+            <!-- Add as many paragraphs as you need. -->
+            <!-- End of school details. -->
+        </section>
+    </main>
+
+    <!-- // Footer & contact info -->
+    <footer id="Contact">
+        <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <div class="content-info">
+            <a href="mailto:email@example.com"><i class="fas fa-envelope"></i>
+            <span class="sr-only">hicksey14@gmail.com
+            </span></a>
+            <a href="https://www.linkedin.com/in/sam-hicks-74ba2aa/" target="_blank"><i class="fab fa-linkedin-in"></i>
+            <span class="sr-only">LinkedIn
+            </span></a>
+            <!--<a href="#" target="_blank">Facebook</a>-->
+        </div>
+        <p>Copyright 2020 by Sam Hicks</p>
+        </div>
+    </footer>
+</body>
+</html>
