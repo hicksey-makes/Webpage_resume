@@ -6,8 +6,8 @@
 *.dylib
 
 #image files
-# *.jpg
-
+*.jpg
+*.png
 
 #just a change to commit
 # Test binary, built with `go test -c`
@@ -17,4 +17,7 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+vendor/
+
+# git ignore file
+.gitignore

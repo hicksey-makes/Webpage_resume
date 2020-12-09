@@ -47,7 +47,7 @@ body {
     margin: 0;
     }
 
-img {
+.profile {
   display: block;
   max-height: 175px;
   max-width: 175px;
@@ -326,19 +326,19 @@ p + h3 {
 }
 
 @media (max-width: 903px) {
-  img {
+  .profile {
     max-width: 175px;
   }
 }
 
 @media (max-width: 607px) {
-  img {
+  .profile {
     max-width: 150px;
   }
 }
 
 @media (max-width: 489px) {
-  img {
+  .profile {
     max-width: 130px;
   }
 }
@@ -353,9 +353,5 @@ p + h3 {
 @media (max-width: 725px) {
  .prof-pic {
    max-width: 165px;
-  }
-
-  img {
-
   }
 }
