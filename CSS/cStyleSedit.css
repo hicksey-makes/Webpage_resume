@@ -262,6 +262,13 @@ p + h3 {
   margin-top: 17px;
 }
 
+.img-att {
+  margin-left: 24px;
+}
+
+.img-att img {
+  margin-right: 0px;
+}
 
 /* Media Queries
 -------------*/
