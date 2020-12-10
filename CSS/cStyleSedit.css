@@ -226,6 +226,7 @@ nav a:hover {
 
 .work {
   background-color: #fcbf49;
+  background-image: radial-gradient(farthest-corner at 77% 20%, rgba(255,245,245,.7), #fcbf49 40%);
 }
 
 h3 ~ p {
