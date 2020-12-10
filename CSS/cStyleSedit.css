@@ -77,7 +77,8 @@ h3 {
 
 a {
   background: none;
-  color: #f77f00;
+  color: #ff952b;
+  /* #f77f00; */
   text-decoration: none;
 }
 
@@ -215,9 +216,12 @@ nav a {
 }
 
 nav a:hover {
-  background-color: rgba(6,54,79,0.9);
+  /* background-color: rgba(6,54,79,0.9); */
+  /* text-decoration: line-through; */
   font-style: italic;
-  color: #FFB463;
+  color: #f7f5fb ;
+  /* padding: 14px 23px; */
+  text-shadow: 2px 2px 3px #ff952b;
 }
 
 
@@ -226,7 +230,7 @@ nav a:hover {
 
 .work {
   background-color: #fcbf49;
-  background-image: radial-gradient(farthest-corner at 77% 20%, rgba(255,245,245,.7), #fcbf49 40%);
+  background-image: radial-gradient(farthest-corner at 77% 20%, rgba(255,255,255,.7), #fcbf49 40%);
 }
 
 h3 ~ p {
