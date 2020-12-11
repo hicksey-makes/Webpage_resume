@@ -345,7 +345,6 @@ p + h3 {
 }
 
 
-
 /* Media Queries
 -------------*/
 
@@ -395,7 +394,12 @@ p + h3 {
     flex: 50%;
     max-width: 50%;
   }
+
+  .img-att {
+    margin-top: 23px;
+  }
 }
+
 @media (max-width:630px) {
  .container {
    grid-template-columns: 1fr;
@@ -408,6 +412,10 @@ p + h3 {
   .column {
     flex: 25%;
     max-width: 25%;
+  }
+
+  .img-att {
+    margin-top: 23px;
   }
 }
 
