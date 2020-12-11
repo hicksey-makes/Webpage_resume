@@ -253,15 +253,25 @@ p + h3 {
   margin-left: 24px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0;
+}
 
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0px;
+  flex-wrap: wrap;
+}
 
 /* thumbnail hover effects */
-
 .cert-sm {
   border-radius: 2px;
   cursor: pointer;
   transition: 0.2s;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   margin-bottom: 10px;
 }
 
@@ -340,12 +350,14 @@ p + h3 {
 -------------*/
 
 @media (min-width: 866px) {
- .col-narrow { width:30%;
+ .col-narrow {
+   width:30%;
    float: left;
    margin:0;
 }
 
- .col-wide { width: 69%;
+ .col-wide {
+   width: 69%;
    float: left;
    padding-left: 2px;
    margin: 0;
@@ -358,11 +370,7 @@ p + h3 {
  }
 }
 
-@media (max-width:630px) {
- .container {
-   grid-template-columns: 1fr;
-  }
-}
+
 
 @media (min-width:976px) {
  .container2 {
@@ -377,13 +385,30 @@ p + h3 {
    margin-top: 19px;
    margin-bottom: 0px;
    }
-}
 
-@media (max-width:975px) {
- .shrink2 {
-   margin-top: 0px;
-   margin-bottom: 0px;
-   }
+  .shrink2 {
+     margin-top: 0px;
+     margin-bottom: 0px;
+     }
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width:630px) {
+ .container {
+   grid-template-columns: 1fr;
+  }
+
+  .img-att {
+    margin: 0;
+    padding: 0;
+  }
+  .column {
+    flex: 25%;
+    max-width: 25%;
+  }
 }
 
 @media(max-width: 800px) {
@@ -395,7 +420,7 @@ p + h3 {
 
  .prof-pic {
    order: -1;
-     }
+  }
 }
 
 @media (max-width: 903px) {
@@ -415,6 +440,7 @@ p + h3 {
     max-width: 130px;
   }
 }
+
 @media (min-width: 725px) {
  .heading {
    flex-wrap: wrap;
@@ -433,4 +459,5 @@ p + h3 {
   .modal-inner1 {
     width: 100%;
   }
+
 }
