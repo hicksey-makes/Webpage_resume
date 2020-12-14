@@ -268,6 +268,11 @@ h3 ~ p {
   margin: 5px auto;
 }
 
+#uber {
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
 /*  Education  */
 .shrink1, .shrink2 {
   margin-top: 15px;
@@ -345,8 +350,14 @@ p + h3 {
   max-width: 700px;
 }
 
+.modal-inner2 {
+  margin: auto;
+  display: block;
+  height: 80%;
+  max-height: 700px;
+}
 /* Caption of Modal image */
-#caption {
+#caption, #caption2 {
   margin: auto;
   display: block;
   width: 80%;
@@ -358,7 +369,9 @@ p + h3 {
 }
 
 /* Add Animation */
-.modal-inner1, #caption {
+
+/* linkedin cert's */
+.modal-inner1, .modal-inner2, #caption, #caption2 {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -369,7 +382,7 @@ p + h3 {
 }
 
 /* Close Button */
-.exit {
+.exit, .exit2 {
   position: absolute;
   top: 20px;
   right: 35px;
@@ -379,7 +392,7 @@ p + h3 {
   transition: 0.3s;
 }
 
-.exit:hover, .exit:focus {
+.exit:hover, .exit:focus, .exit2:hover, .exit2:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
