@@ -268,9 +268,10 @@ h3 ~ p {
   margin: 5px auto;
 }
 
-#uber {
+#img-ninth {
   margin-left: 25px;
   margin-bottom: 0;
+  object-fit: cover;
 }
 
 /*  Education  */
