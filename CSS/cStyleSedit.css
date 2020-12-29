@@ -56,13 +56,13 @@ html {
 body {
     background-color: var(--background);
     color: black;
-    font-family: 'Arsenal', sans-serif;
+    font-family: Garamond, serif;
     font-size: 18px;
     margin: 0;
     }
 
 h1, h2 {
-  font-family: 'Cabin', sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 h1 {
@@ -73,10 +73,15 @@ h2 {
   font-size: 35px;
   margin-top: 0;
   margin-bottom: 0px;
+  /* font-style: italic; */
 }
 
 h3 {
   margin: 30px 0 0 0;
+}
+
+.h-style {
+  font-family: Helvetica, sans-serif;
 }
 
 h4 {
@@ -274,6 +279,11 @@ h3 ~ p {
   object-fit: cover;
 }
 
+.job-tit {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
 /*  Education  */
 .shrink1, .shrink2 {
   margin-top: 15px;
@@ -313,6 +323,7 @@ p + h3 {
   padding: 0 0px;
   flex-wrap: wrap;
 }
+
 
 /* thumbnail hover effects */
 .cert-sm {
