@@ -329,6 +329,24 @@ p + h3 {
   flex-wrap: wrap;
 }
 
+.sidebside {
+  float: left;
+  list-style: none;
+  background: url("../images/check-mark-smaller.png") no-repeat center left;
+  margin: 0 15px 10px 15px;
+  padding-left: 20px;
+}
+
+.sidebsise:before {
+  /* content: url(../images/Checkmark-small.jpg); */
+}
+li.sidebside:first-of-type {
+  margin-left: 0;
+}
+
+.courses {
+  clear: left;
+}
 
 /* thumbnail hover effects */
 .cert-sm {
