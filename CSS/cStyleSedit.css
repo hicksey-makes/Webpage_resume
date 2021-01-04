@@ -44,7 +44,7 @@ html {
   --alabaster: #EEEBDD;
   --coffee: rgba(60, 55, 68, 1);
   --coffee-sub: rgba(60, 55, 68, 0.2);
-  --coffee-head: #011936 ;
+  --coffee-head: #011936;
   --background: #859ca0;
   --mango: #fcbf49;
 }
@@ -103,12 +103,8 @@ a {
   color: var(--inter-orange);
   /* #ff952b; */
   text-decoration: none;
-  text-shadow: 3px 3px 4px black;
+  text-shadow: -3px 4px 4px #eeeeee;
 }
-
-a:hover {
-  font-weight: bolder;
-  }
 
 .content-wrap {
   max-width: 950px;
@@ -246,9 +242,9 @@ nav a {
 nav a:hover {
   /* text-decoration: line-through; */
   color: var(--orange-adj);
-  /* text-shadow: 5px 5px 4px #47897D; */
+  text-shadow: none;
   /* padding: 14px 22px; */
-  background-color: var(--coffee);
+  background-color: rgba(1, 25, 54, .6);
 }
 
 /********  Work Experience  ************/
