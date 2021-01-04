@@ -28,7 +28,7 @@ $ashgray: #bcbfb5;
 $shinyshamrock: #4eaa70;
 $iguanagreen: #72aa86;
 
-/*  Global styles  */
+/************  Global styles  *******/
 html {
   box-sizing: border-box;
 }
@@ -56,13 +56,13 @@ html {
 body {
     background-color: var(--background);
     color: black;
-    font-family: 'Arsenal', sans-serif;
+    font-family: Garamond, serif;
     font-size: 18px;
     margin: 0;
     }
 
 h1, h2 {
-  font-family: 'Cabin', sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 h1 {
@@ -73,10 +73,15 @@ h2 {
   font-size: 35px;
   margin-top: 0;
   margin-bottom: 0px;
+  /* font-style: italic; */
 }
 
 h3 {
   margin: 30px 0 0 0;
+}
+
+.h-style {
+  font-family: Helvetica, sans-serif;
 }
 
 h4 {
@@ -85,7 +90,7 @@ h4 {
 
 p {
   line-height: 1.5;
-  margin: 11 0 0 0;
+  margin: 11px 0 0px 0;
 }
 
 h5 {
@@ -122,7 +127,7 @@ a:hover {
   text-transform: uppercase;
 }
 
-/*  Download Button  */
+/********  Download Button  **********/
 .btn {
   text-decoration: none;
   color: var(--coffee);
@@ -139,7 +144,7 @@ a:hover {
   /* 4px 5px 4px #47897D; */
 }
 
-/*   Header  */
+/**********   Header  ***********/
 header {
   font-weight:800;
   padding-top: 50px;
@@ -182,7 +187,7 @@ header h2 {
   bottom: 0;
 }
 
-/*  Footer  */
+/************  Footer  *********/
 footer {
   text-align:center;
   color: var(--silver);
@@ -213,13 +218,13 @@ footer {
    box-shadow: 3px 3px 8px var(--coffee);
    color: #011936;
  }
- /*   Header and Footer  */
+ /********   Header and Footer  *******/
  header, footer {
    background-color: var(--alabaster);
    color: var(--rustic);
 }
 
-/*  Navigation  */
+/*****  Navigation  *******/
 nav {
   background-color: var(--silver);
   margin-bottom: 5px;
@@ -246,7 +251,7 @@ nav a:hover {
   background-color: var(--coffee);
 }
 
-/*  Work Experience  */
+/********  Work Experience  ************/
 .work {
   background-color: var(--mango);
   background-image: radial-gradient(farthest-side at 83% 21%, rgba(255,255,255,0.9) , #fcbf49 90%);
@@ -272,6 +277,16 @@ h3 ~ p {
   margin-left: 25px;
   margin-bottom: 0;
   object-fit: cover;
+}
+
+.job-tit {
+  margin-bottom: 5px;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.job-description li:first-of-type {
+  margin-top: -10px;
 }
 
 /*  Education  */
@@ -312,6 +327,25 @@ p + h3 {
   max-width: 25%;
   padding: 0 0px;
   flex-wrap: wrap;
+}
+
+.sidebside {
+  float: left;
+  list-style: none;
+  background: url("../images/check-mark-smaller.png") no-repeat center left;
+  margin: 0 15px 10px 15px;
+  padding-left: 20px;
+}
+
+.sidebsise:before {
+  /* content: url(../images/Checkmark-small.jpg); */
+}
+li.sidebside:first-of-type {
+  margin-left: 0;
+}
+
+.courses {
+  clear: left;
 }
 
 /* thumbnail hover effects */
