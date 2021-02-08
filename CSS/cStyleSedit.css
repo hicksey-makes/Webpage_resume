@@ -12,7 +12,8 @@ html {
   --silverish: #DEDEDE;
   --prussianblue: #003049;
   --thinblue: rgba(1, 25, 54, .6);
-  --inter-orange: #FF8B61;
+  --inter-orange: #FFA280;
+  /*#FF8B61;*/
   /*FF4400;*/
   --orange-rgb: rgba(253, 82, 0, 0.36);
   --orange-adj: hsl(19, 100%, 69%);
