@@ -4,7 +4,8 @@
 *.dll
 *.so
 *.dylib
-
+#photos
+*.jpg
 
 #just a change to commit
 # Test binary, built with `go test -c`
