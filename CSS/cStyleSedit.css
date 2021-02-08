@@ -12,7 +12,8 @@ html {
   --silverish: #DEDEDE;
   --prussianblue: #003049;
   --thinblue: rgba(1, 25, 54, .6);
-  --inter-orange: #fd5200;
+  --inter-orange: #FF8B61;
+  /*FF4400;*/
   --orange-rgb: rgba(253, 82, 0, 0.36);
   --orange-adj: hsl(19, 100%, 69%);
   --rustic: #af3800;
@@ -72,7 +73,7 @@ a {
   background: none;
   color: var(--inter-orange);
   text-decoration: none;
-  text-shadow: -4px 3px 5px var(--silverish);
+  text-shadow: -5px 4px 6px #587291, 0 0 5px var(--silverish);
 }
 
 .h-style {
