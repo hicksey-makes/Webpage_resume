@@ -13,6 +13,7 @@ html {
   --prussianblue: #003049;
   --thinblue: rgba(1, 25, 54, .6);
   --inter-orange: #FFA280;
+  --florida: #e18335;
   /*#FF8B61;*/
   /*FF4400;*/
   --orange-rgb: rgba(253, 82, 0, 0.36);
@@ -72,11 +73,11 @@ p {
 
 a {
   background: none;
-  color: var(--inter-orange);
+  color: #D9DCDE;/*#3d3b8e;*/
   text-decoration: none;
-  text-shadow: -5px 4px 6px #587291, 0 0 5px var(--silverish);
-}
-
+  text-shadow: 4px -1px 4px #2F2E76, 1px -2px 4px #f4edea;
+}/*#587291
+*/
 .h-style {
   font-family: Helvetica, sans-serif;
 }
@@ -166,9 +167,10 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--orange-adj);
+  color: var(--mango);
   text-shadow: none;
-  background-color: var(--thinblue);
+  font-style: italic;
+  /* background-color: var(--thinblue); */
 }
 
 /*****  Download Button  *****/
