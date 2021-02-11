@@ -14,6 +14,7 @@ html {
   --thinblue: rgba(1, 25, 54, .6);
   --inter-orange: #FFA280;
   --florida: #e18335;
+  --purple-acc: #2F2E76;
   /*#FF8B61;*/
   /*FF4400;*/
   --orange-rgb: rgba(253, 82, 0, 0.36);
@@ -196,7 +197,7 @@ footer {
 }
 
 .content-info a {
-  color: var(--silver);
+  color: var(--purple-acc);
   padding: 5px 15px;
   margin-top: 10px;
   margin-right: 15px;
@@ -207,7 +208,7 @@ footer {
 
  .content-info a:hover {
    box-shadow: 3px 3px 8px var(--coffee);
-   color: var(--royalblue);
+   color: var(--silver);
  }
 
  #Contact h2 {
@@ -217,6 +218,7 @@ footer {
  #Contact p {
    color: var(--coffee);
  }
+
 
 
  /*****   Header and Footer  *****/
