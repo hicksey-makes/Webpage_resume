@@ -12,7 +12,11 @@ html {
   --silverish: #DEDEDE;
   --prussianblue: #003049;
   --thinblue: rgba(1, 25, 54, .6);
-  --inter-orange: #fd5200;
+  --inter-orange: #FFA280;
+  --florida: #e18335;
+  --purple-acc: #2F2E76;
+  /*#FF8B61;*/
+  /*FF4400;*/
   --orange-rgb: rgba(253, 82, 0, 0.36);
   --orange-adj: hsl(19, 100%, 69%);
   --rustic: #af3800;
@@ -70,11 +74,11 @@ p {
 
 a {
   background: none;
-  color: var(--inter-orange);
+  color: #D9DCDE;/*#3d3b8e;*/
   text-decoration: none;
-  text-shadow: -3px 4px 4px var(--silverish);
-}
-
+  text-shadow: 4px -1px 4px #2F2E76, 1px -2px 4px #f4edea;
+}/*#587291
+*/
 .h-style {
   font-family: Helvetica, sans-serif;
 }
@@ -118,6 +122,10 @@ header h2 {
   flex-basis: 530px;
 }
 
+/* .missions p {
+  font-size: 1.2rem;
+} */
+
 .profile {
   display: block;
   max-height: 175px;
@@ -160,9 +168,10 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--orange-adj);
+  color: var(--mango);
   text-shadow: none;
-  background-color: var(--thinblue);
+  font-style: italic;
+  /* background-color: var(--thinblue); */
 }
 
 /*****  Download Button  *****/
@@ -188,7 +197,7 @@ footer {
 }
 
 .content-info a {
-  color: var(--silver);
+  color: var(--purple-acc);
   padding: 5px 15px;
   margin-top: 10px;
   margin-right: 15px;
@@ -199,7 +208,7 @@ footer {
 
  .content-info a:hover {
    box-shadow: 3px 3px 8px var(--coffee);
-   color: var(--royalblue);
+   color: var(--silver);
  }
 
  #Contact h2 {
@@ -209,6 +218,7 @@ footer {
  #Contact p {
    color: var(--coffee);
  }
+
 
 
  /*****   Header and Footer  *****/
@@ -515,6 +525,18 @@ li.sidebside:first-of-type {
 @media only screen and (max-width: 700px) {
   .modal-inner1 {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  h1 {
+    font-size: 75px;
+  }
+  h2 {
+    font-size: 37px;
+  }
+  body {
+    font-size: 19px;
   }
 }
 
