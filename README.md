@@ -12,4 +12,4 @@ My github pages repo can be found at:
 https://github.com/hicksey-makes/hicksey-makes.github.io/
 
 And, soon, you can see my customized resume at:
-https://hicksey-makes.github.io/resume_update/Sam_h_index.html
+https://hicksey-makes.github.io/Webpage_resume/Sam_h_index.html
