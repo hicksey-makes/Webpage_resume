@@ -1,30 +1,35 @@
+/**********  Global  **********/
+
 /*  rework  */
 $maximumyellowred: #fcbf4;
+/*  RGB  */
+$color1: rgba(218, 255, 239, 1);
+$color2: rgba(208, 255, 214, 1);
+$color3: rgba(213, 226, 188, 1);
+$color4: rgba(166, 151, 156, 1);
+$color5: rgba(211, 192, 210, 1);
 
-/**********  Global  **********/
+$color1: rgba(208, 255, 249, 1);
+$color4: rgba(176, 151, 156, 1);
+$color5: rgba(230, 192, 210, 1);
+
 html {
   box-sizing: border-box;
 }
 
 :root {
-  --iguana: #72aa86;
+  --shamrock: #72aa86;
   --silver: #a9abad;
   --silverish: #DEDEDE;
   --prussianblue: #003049;
   --thinblue: rgba(1, 25, 54, .6);
-  --inter-orange: #FFA280;
-  --florida: #e18335;
-  --purple-acc: #2F2E76;
-  /*#FF8B61;*/
-  /*FF4400;*/
-  --orange-rgb: rgba(253, 82, 0, 0.36);
-  --orange-adj: hsl(19, 100%, 69%);
+  --coral: #FF8B61;
   --rustic: #af3800;
   --alabaster: #EEEBDD;
   --coffee: rgba(60, 55, 68, 1);
   --coffee-sub: rgba(60, 55, 68, 0.2);
   --royalblue: #011936;
-  --background: #859ca0;
+  --body-background: #859ca0;
   --mango: #fcbf49;
 }
 
@@ -33,7 +38,7 @@ html {
 }
 
 body {
-    background-color: var(--background);
+    background-color: var(--body-background);
     color: black;
     font-family: Garamond, serif;
     font-size: 18px;
@@ -178,7 +183,7 @@ nav a:hover {
 .btn {
   text-decoration: none;
   color: var(--thinblue);
-  background-color: var(--iguana);
+  background-color: var(--shamrock);
   display: inline-block;
   padding: 8px;
   text-shadow: none;
@@ -193,11 +198,11 @@ nav a:hover {
 /**********  Footer  **********/
 footer {
   text-align:center;
-  color: var(--silver);
+  color: var(--coffee);
 }
 
 .content-info a {
-  color: var(--purple-acc);
+  color: var(--thinblue);
   padding: 5px 15px;
   margin-top: 10px;
   margin-right: 15px;
@@ -209,6 +214,7 @@ footer {
  .content-info a:hover {
    box-shadow: 3px 3px 8px var(--coffee);
    color: var(--silver);
+   background-color: var(--shamrock);
  }
 
  #Contact h2 {
@@ -539,15 +545,3 @@ li.sidebside:first-of-type {
     font-size: 19px;
   }
 }
-
-
-/*  RGB  */
-$color1: rgba(218, 255, 239, 1);
-$color2: rgba(208, 255, 214, 1);
-$color3: rgba(213, 226, 188, 1);
-$color4: rgba(166, 151, 156, 1);
-$color5: rgba(211, 192, 210, 1);
-
-$color1: rgba(208, 255, 249, 1);
-$color4: rgba(176, 151, 156, 1);
-$color5: rgba(230, 192, 210, 1);
