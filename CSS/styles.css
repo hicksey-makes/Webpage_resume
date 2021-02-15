@@ -72,7 +72,7 @@ a {
   background: none;
   color: var(--mango);
   text-decoration: none;
-  text-shadow: -3px -1px 4px var(--prussianblue), -5px -1px 6px #f4edea;
+  text-shadow: -2px -1px 4px var(--prussianblue), -4px 1px 4px #f4edea;
 }
 
 .h-style {
