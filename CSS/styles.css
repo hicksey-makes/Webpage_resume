@@ -1,31 +1,27 @@
+/**********  Global  **********/
+
 /*  rework  */
 $maximumyellowred: #fcbf4;
 
-/**********  Global  **********/
 html {
   box-sizing: border-box;
 }
 
 :root {
-  --iguana: #72aa86;
+  --shamrock: #72aa86;
   --silver: #a9abad;
   --silverish: #DEDEDE;
   --prussianblue: #003049;
   --thinblue: rgba(1, 25, 54, .6);
-  --inter-orange: #FFA280;
-  --florida: #e18335;
-  --purple-acc: #2F2E76;
-  /*#FF8B61;*/
-  /*FF4400;*/
-  --orange-rgb: rgba(253, 82, 0, 0.36);
-  --orange-adj: hsl(19, 100%, 69%);
+  --coral: #FF8B61;
   --rustic: #af3800;
   --alabaster: #EEEBDD;
   --coffee: rgba(60, 55, 68, 1);
   --coffee-sub: rgba(60, 55, 68, 0.2);
   --royalblue: #011936;
-  --background: #859ca0;
+  --body-background: #859ca0;
   --mango: #fcbf49;
+  --minty: #DAFFEF;
 }
 
 *, *:before, *:after {
@@ -33,7 +29,7 @@ html {
 }
 
 body {
-    background-color: var(--background);
+    background-color: var(--body-background);
     color: black;
     font-family: Garamond, serif;
     font-size: 18px;
@@ -74,11 +70,11 @@ p {
 
 a {
   background: none;
-  color: #D9DCDE;/*#3d3b8e;*/
+  color: var(--mango);
   text-decoration: none;
-  text-shadow: 4px -1px 4px #2F2E76, 1px -2px 4px #f4edea;
-}/*#587291
-*/
+  text-shadow: -2px -1px 4px var(--prussianblue), -4px 1px 4px #f4edea;
+}
+
 .h-style {
   font-family: Helvetica, sans-serif;
 }
@@ -103,7 +99,7 @@ a {
 
 /**********  Header  **********/
 header {
-  font-weight:800;
+  font-weight: 500;
   padding-top: 50px;
   position: relative;
 }
@@ -122,16 +118,12 @@ header h2 {
   flex-basis: 530px;
 }
 
-/* .missions p {
-  font-size: 1.2rem;
-} */
-
 .profile {
   display: block;
   max-height: 175px;
   max-width: 175px;
-  height:auto;
-  width:auto;
+  height: auto;
+  width: auto;
   border-radius: 55%;
   }
 
@@ -163,22 +155,22 @@ nav a {
   display: inline-block;
   padding: 12px 20px;
   font-weight: bold;
-  text-decoration:none;
-  text-transform:uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav a:hover {
-  color: var(--mango);
+  color: var(--alabaster);
   text-shadow: none;
-  font-style: italic;
-  /* background-color: var(--thinblue); */
+  /* font-style: italic; */
+  background-color: var(--thinblue);
 }
 
 /*****  Download Button  *****/
 .btn {
   text-decoration: none;
   color: var(--thinblue);
-  background-color: var(--iguana);
+  background-color: var(--shamrock);
   display: inline-block;
   padding: 8px;
   text-shadow: none;
@@ -193,11 +185,11 @@ nav a:hover {
 /**********  Footer  **********/
 footer {
   text-align:center;
-  color: var(--silver);
+  color: var(--coffee);
 }
 
 .content-info a {
-  color: var(--purple-acc);
+  color: var(--shamrock);
   padding: 5px 15px;
   margin-top: 10px;
   margin-right: 15px;
@@ -207,8 +199,9 @@ footer {
  }
 
  .content-info a:hover {
-   box-shadow: 3px 3px 8px var(--coffee);
    color: var(--silver);
+   box-shadow: 3px 3px 8px var(--shamrock);
+   /* background-color: var(--shamrock); */
  }
 
  #Contact h2 {
@@ -254,7 +247,7 @@ h3 ~ p {
   margin: 5px auto;
 }
 
-.job-tit {
+.job-title {
   margin-bottom: 5px;
   font-style: italic;
   font-size: 1.2em;
@@ -411,9 +404,9 @@ li.sidebside:first-of-type {
 
 @media (min-width: 866px) {
  .col-narrow {
-   width:30%;
+   width: 30%;
    float: left;
-   margin:0;
+   margin: 0;
 }
 
  .col-wide {
@@ -424,21 +417,21 @@ li.sidebside:first-of-type {
 }
 
  .padding {
-   padding-left:241px;
-   margin-top:248px;
-   margin-left:92px;
+   padding-left: 241px;
+   margin-top: 248px;
+   margin-left: 92px;
  }
 }
 
-@media (min-width:976px) {
+@media (min-width: 976px) {
  .container2 {
    display: grid;
    grid-template-columns: minmax(250px, 400px) minmax(300px, 1fr);
-   grid-gap:10px;
+   grid-gap: 10px;
    }
 }
 
-@media (max-width:975px) {
+@media (max-width: 975px) {
  .shrink1 {
    margin-top: 19px;
    margin-bottom: 0px;
@@ -539,15 +532,3 @@ li.sidebside:first-of-type {
     font-size: 19px;
   }
 }
-
-
-/*  RGB  */
-$color1: rgba(218, 255, 239, 1);
-$color2: rgba(208, 255, 214, 1);
-$color3: rgba(213, 226, 188, 1);
-$color4: rgba(166, 151, 156, 1);
-$color5: rgba(211, 192, 210, 1);
-
-$color1: rgba(208, 255, 249, 1);
-$color4: rgba(176, 151, 156, 1);
-$color5: rgba(230, 192, 210, 1);
