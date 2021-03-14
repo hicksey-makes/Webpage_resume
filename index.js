@@ -1,3 +1,14 @@
+/* Grab nav elements, and add class active "onclick" */
+var navigation = document.getElementById("myNav");
+var navLinks = navigation.getElementsByClassName("nav-link");
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
 /* Get the Modal, modal img and caption text */
 var modal1 = document.getElementById('imgModal1');
 var modalImg1 = document.getElementById('img-01');
@@ -11,15 +22,15 @@ var img1 = document.getElementById('img-ninth');
 img1.onclick = function() {
   modal2.style.display = "block";
   modalImgUb.src = this.src;
-  captionText2.innerHTML = this.alt;
+  captionText2.innerHTML = this.title;
 }
 
-/* get first certificate image and insert in modal - use its "alt" text as a caption */
+/* get first certificate image and insert in modal - use its "title" text as a caption */
 var img1 = document.getElementById('img-first');
 img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
-  captionText.innerHTML = this.alt;
+  captionText.innerHTML = this.title;
 }
 
 /* second certificate image */
@@ -27,7 +38,7 @@ var img1 = document.getElementById('img-second');
 img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
-  captionText.innerHTML = this.alt;
+  captionText.innerHTML = this.title;
 }
 
 /* third certificate image */
@@ -35,7 +46,7 @@ var img1 = document.getElementById('img-third');
 img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
-  captionText.innerHTML = this.alt;
+  captionText.innerHTML = this.title;
 }
 
 /* fourth certificate image */
@@ -43,7 +54,7 @@ var img1 = document.getElementById('img-fourth');
 img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
-  captionText.innerHTML = this.alt;
+  captionText.innerHTML = this.title;
 }
 
 /* fifth certificate image */
@@ -51,7 +62,7 @@ var img1 = document.getElementById('img-fifth');
 img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
-  captionText.innerHTML = this.alt;
+  captionText.innerHTML = this.title;
 }
 
 /* sixth certificate image */
@@ -59,7 +70,7 @@ var img1 = document.getElementById('img-sixth');
 img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
-  captionText.innerHTML = this.alt;
+  captionText.innerHTML = this.title;
 }
 
 /* seventh certificate image */
@@ -67,7 +78,7 @@ var img1 = document.getElementById('img-seventh');
 img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
-  captionText.innerHTML = this.alt;
+  captionText.innerHTML = this.title;
 }
 
 /* eighth certificate image */
@@ -75,7 +86,7 @@ var img1 = document.getElementById('img-eighth');
 img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
-  captionText.innerHTML = this.alt;
+  captionText.innerHTML = this.title;
 }
 
 
