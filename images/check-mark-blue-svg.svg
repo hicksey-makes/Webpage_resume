@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="27px" height="25px" viewBox="0 0 27 25" style="enable-background:new 0 0 27 25;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#path1362_1_);}
+	.st1{fill:url(#path2120_1_);}
+	.st2{fill:url(#path1323_1_);}
+</style>
+<g>
+	<g id="layer1">
+		<g id="g1330" transform="matrix(0.938266 0 0 0.938266 -61.126 -25.3671)">
+			
+				<radialGradient id="path1362_1_" cx="-904.1564" cy="587.3508" r="0.5" gradientTransform="matrix(18 0 0 -13.5 16354.3291 7968.877)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#16527F;stop-opacity:0.9844"/>
+				<stop  offset="1" style="stop-color:#032D50;stop-opacity:0.9844"/>
+				<stop  offset="1" style="stop-color:#032D50;stop-opacity:0.9844"/>
+			</radialGradient>
+			<path id="path1362" class="st0" d="M88.3,32.5c-0.1,0-0.2,0.1-0.3,0.1l-12,8L71,36.7c-0.3-0.2-0.6-0.2-0.9,0
+				c-0.2,0.2-0.3,0.6-0.1,0.8l5.5,8.9c0.1,0.2,0.3,0.3,0.5,0.3c0.2,0,0.4-0.1,0.6-0.2l12.3-13c0.2-0.2,0.3-0.5,0.1-0.8
+				C88.9,32.5,88.6,32.4,88.3,32.5z"/>
+			
+				<radialGradient id="path2120_1_" cx="-902.5511" cy="585.6772" r="0.5" gradientTransform="matrix(17.2778 0 0 -12.7521 15673.5801 7508.2637)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#16527F;stop-opacity:0.9844"/>
+				<stop  offset="1" style="stop-color:#032D50;stop-opacity:0.9844"/>
+				<stop  offset="1" style="stop-color:#032D50;stop-opacity:0.9844"/>
+			</radialGradient>
+			<path id="path2120" class="st1" d="M88.4,32.8c0,0-0.1,0-0.1,0L76.1,41l-5.3-4c-0.1-0.1-0.3-0.1-0.4,0c-0.1,0.1-0.1,0.3,0,0.4
+				l5.5,8.9c0,0.1,0.1,0.1,0.2,0.1c0.1,0,0.2,0,0.2-0.1l12.3-13c0.1-0.1,0.1-0.2,0.1-0.3C88.6,32.9,88.5,32.8,88.4,32.8z"/>
+			
+				<radialGradient id="path1323_1_" cx="-900.9319" cy="584.1729" r="0.5" gradientTransform="matrix(16.6058 0 0 -12.1473 15040.166 7135.7554)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#16527F;stop-opacity:0.9844"/>
+				<stop  offset="1" style="stop-color:#032D50;stop-opacity:0.9844"/>
+				<stop  offset="1" style="stop-color:#032D50;stop-opacity:0.9844"/>
+			</radialGradient>
+			<path id="path1323" class="st2" d="M88.4,33.2l-12.3,8.2l-5.4-4.1l5.4,8.8L88.4,33.2z"/>
+		</g>
+	</g>
+</g>
+</svg>
