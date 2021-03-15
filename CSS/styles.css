@@ -316,6 +316,10 @@ li.sidebside:first-of-type {
   clear: left;
 }
 
+.shadow {
+  display: none;
+}
+
 /*****  Thumbnail Hover Effects  *****/
 .cert-sm {
   border-radius: 2px;
@@ -481,6 +485,14 @@ li.sidebside:first-of-type {
 
   .img-att {
     margin-top: 23px;
+  }
+
+  .cloud {
+    visibility: hidden;
+  }
+
+  .shadow {
+    display: inline-block;
   }
 }
 
