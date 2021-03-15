@@ -18,12 +18,7 @@ var modal2 = document.getElementById('imgModal2');
 var modalImgUb = document.getElementById('img-ub');
 var captionText2 = document.getElementById('caption2');
 
-var img1 = document.getElementById('img-ninth');
-img1.onclick = function() {
-  modal2.style.display = "block";
-  modalImgUb.src = this.src;
-  captionText2.innerHTML = this.title;
-}
+
 
 /* get first certificate image and insert in modal - use its "title" text as a caption */
 var img1 = document.getElementById('img-first');
@@ -89,6 +84,29 @@ img1.onclick = function() {
   captionText.innerHTML = this.title;
 }
 
+/* ninth(uber) certificate image */
+var img1 = document.getElementById('img-ninth');
+img1.onclick = function() {
+  modal2.style.display = "block";
+  modalImgUb.src = this.src;
+  captionText2.innerHTML = this.title;
+}
+
+/* tenth certificate image */
+var img1 = document.getElementById('img-tenth');
+img1.onclick = function() {
+  modal1.style.display = "block";
+  modalImg1.src = this.src;
+  captionText.innerHTML = this.title;
+}
+
+/* eleventh certificate image */
+var img1 = document.getElementById('img-eleventh');
+img1.onclick = function() {
+  modal1.style.display = "block";
+  modalImg1.src = this.src;
+  captionText.innerHTML = this.title;
+}
 
 /* Get the <span> element that closes the modal */
 var span1 = document.getElementsByClassName("exit")[0];
