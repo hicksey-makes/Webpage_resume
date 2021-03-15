@@ -159,7 +159,7 @@ nav a {
   text-transform: uppercase;
 }
 
-nav a:hover {
+nav a:hover, .active {
   color: var(--alabaster);
   text-shadow: none;
   /* font-style: italic; */
