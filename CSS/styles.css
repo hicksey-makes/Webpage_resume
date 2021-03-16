@@ -506,6 +506,11 @@ li.sidebside:first-of-type {
   }
 }
 
+@media (max-width: 895px) {
+  .sidebside {
+    margin-left: 0px;
+  }
+}
 @media (min-width: 866px) {
  .col-narrow {
    width: 30%;
