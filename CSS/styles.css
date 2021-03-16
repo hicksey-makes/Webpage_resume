@@ -102,6 +102,13 @@ header {
   font-weight: 500;
   padding-top: 50px;
   position: relative;
+
+}
+
+#oblique {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 header h1,
