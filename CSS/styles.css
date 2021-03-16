@@ -189,7 +189,7 @@ footer {
 }
 
 .content-info a {
-  color: var(--shamrock);
+  color: var(--coffee-sub);
   padding: 5px 15px;
   margin-top: 10px;
   margin-right: 15px;
@@ -199,9 +199,9 @@ footer {
  }
 
  .content-info a:hover {
-   color: var(--silver);
-   box-shadow: 3px 3px 8px var(--shamrock);
-   /* background-color: var(--shamrock); */
+   color: var(--prussianblue);
+   box-shadow: 3px 3px 8px var(--thinblue);
+   background-color: var(--coffee-sub);
  }
 
  #Contact h2 {
