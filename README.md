@@ -1,6 +1,6 @@
 # Webpage Resume
 
-This is my resume in html form!
+My webpage-resume highlighting responsive design using CSS grid and modals!
 
 My github userpage is at:
 https://github.com/hicksey-makes/
