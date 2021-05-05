@@ -1,7 +1,4 @@
-hicksey-makes.github.io
-
-
-## Hello World
+# Webpage Resume
 
 This is my resume in html form!
 
