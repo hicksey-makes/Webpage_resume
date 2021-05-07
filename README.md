@@ -14,7 +14,7 @@
 
 ## Links
 View my github userpage:
-*https://github.com/hicksey-makes/*
+*https://github.com/hicksey-makes/*.
 
 View my customized resume:
-*https://hicksey-makes.github.io/Webpage_resume/Sam_h_index.html*
+*https://hicksey-makes.github.io/Webpage_resume/Sam_h_index.html*.
