@@ -13,8 +13,8 @@
 * Add bootstrap plugin ScrollSpy to automatically update nav based on scroll position. 
 
 ## Links
-My github userpage is at:
-*https://github.com/hicksey-makes/
+View my github userpage:
+*https://github.com/hicksey-makes/*
 
-My customized resume is at:
-*https://hicksey-makes.github.io/Webpage_resume/Sam_h_index.html
+View my customized resume:
+*https://hicksey-makes.github.io/Webpage_resume/Sam_h_index.html*
