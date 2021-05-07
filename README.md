@@ -1,20 +1,20 @@
 # Webpage Resume
 
-My webpage-resume highlighting responsive design using CSS grid and modals!
+**My webpage-resume highlighting responsive design using CSS grid!**
 
-# Steps Involved
-* Write a responsive webpage using the css grid.
-* Create hidden modals that appear on-click using css animations and javascript. 
-* Utilize media queries to maintain responsive layout.  
-* Highlight nav section that has been clicked.
+## Steps Involved
+* Plan the grid sections' behavior before applying them to the html.
+* Create hidden modals that appear on-click with the display property, CSS animations and Javascript. 
+* Utilize media queries to maintain responsive layout along with the grid.  
+* Highlight nav section that has been clicked by dynamically updating class on element.
 
-# Next Steps
+## Next Steps
 * Update education section with new courses and experience.
 * Add bootstrap plugin ScrollSpy to automatically update nav based on scroll position. 
 
-# Links
+## Links
 My github userpage is at:
-https://github.com/hicksey-makes/
+*https://github.com/hicksey-makes/
 
 My customized resume is at:
-https://hicksey-makes.github.io/Webpage_resume/Sam_h_index.html
+*https://hicksey-makes.github.io/Webpage_resume/Sam_h_index.html
