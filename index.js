@@ -116,6 +116,13 @@ img1.onclick = function() {
   captionText.innerHTML = this.title;
 }
 
+/* thirteenth certificate image */
+var img1 = document.getElementById('img-thirteenth');
+img1.onclick = function() {
+  modal1.style.display = "block";
+  modalImg1.src = this.src;
+  captionText.innerHTML = this.title;
+}
 /* Get the <span> element that closes the modal */
 var span1 = document.getElementsByClassName("exit")[0];
 var span2 = document.getElementsByClassName("exit2")[0];
