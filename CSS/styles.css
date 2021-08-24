@@ -328,6 +328,10 @@ li.sidebside:first-of-type {
   display: none;
 }
 
+.ed-link {
+  color: white;
+}
+
 /*****  Thumbnail Hover Effects  *****/
 .cert-sm {
   border-radius: 2px;
