@@ -347,6 +347,7 @@ li.sidebside:first-of-type {
 }
 .ed-link {
   color: white;
+  text-shadow: 2px 1px 3px var(--thinblue), 2px 2px 5px var(--shamrock);
 }
 
 .skill-badge {
