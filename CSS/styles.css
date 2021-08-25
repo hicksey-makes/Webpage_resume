@@ -56,7 +56,7 @@ h4 {
 
 h5 {
   margin: 0;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 h1, h2 {
@@ -167,10 +167,10 @@ nav a {
 }
 
 nav a:hover, .active {
-  color: var(--minty);
+  color: whitesmoke;
   text-shadow: none;
   /* font-style: italic; */
-  background-color: var(--coffee);
+  background-color: rgba(175, 56, 0, 0.75);
 }
 
 /*****  Download Button  *****/
@@ -324,30 +324,18 @@ li.sidebside:first-of-type {
   clear: left;
 }
 
-.shadow {
-  display: none;
-}
-
-.in-learning{
-  position: relative;
-}
-
 #certs-label {
   margin-left: -15px;
 }
+
 #assess-label {
   margin-left: 25px;
   margin-top: 20px;
 }
-.skill-assess {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
 
-}
 .ed-link {
   color: white;
-  text-shadow: 2px 1px 3px var(--thinblue), 2px 2px 5px var(--shamrock);
+  text-shadow: 2px 1px 3px var(--thinblue), 1px 2px 5px var(--shamrock);
 }
 
 .skill-badge {
@@ -359,7 +347,6 @@ li.sidebside:first-of-type {
 
 .cal {
   color: var(--shamrock);
-
 }
 
 /*****  Thumbnail Hover Effects  *****/
