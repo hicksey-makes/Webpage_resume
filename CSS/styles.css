@@ -11,17 +11,22 @@ html {
   --shamrock: #72aa86;
   --silver: #a9abad;
   --silverish: #DEDEDE;
-  --prussianblue: #003049;
+  --prussianblue: #253d5b;
   --thinblue: rgba(1, 25, 54, .6);
   --coral: #FF8B61;
   --rustic: #af3800;
-  --alabaster: #EEEBDD;
+  --alabaster: #F3F1E7;
   --coffee: rgba(60, 55, 68, 1);
   --coffee-sub: rgba(60, 55, 68, 0.2);
   --royalblue: #011936;
   --body-background: #859ca0;
   --mango: #fcbf49;
   --minty: #DAFFEF;
+  --gainsboro: #d7dae5;
+  --cordovan: #984447;
+  --wintergreen: #55917f;
+  --prussiandark: #1b2c41;
+  --danger: #C73A3E;
 }
 
 *, *:before, *:after {
@@ -70,9 +75,9 @@ p {
 
 a {
   background: none;
-  color: var(--mango);
+  color: #f4edea;
   text-decoration: none;
-  text-shadow: -2px -1px 4px var(--prussianblue), -4px 1px 4px #f4edea;
+  text-shadow: 2px 1px 3px var(--prussianblue), 2px 2px 2px var(--wintergreen);
 }
 
 .h-style {
@@ -113,7 +118,7 @@ header {
 
 header h1,
 header h2 {
-  color: var(--prussianblue);
+  color: var(--prussiandark);
   margin: 0;
 }
 
@@ -149,7 +154,7 @@ header h2 {
 
 /*****  Navigation  *****/
 nav {
-  background-color: var(--silver);
+  background-color: var(--prussianblue);
   margin-bottom: 5px;
   text-align: center;
   position: fixed;
@@ -170,14 +175,14 @@ nav a:hover, .active {
   color: whitesmoke;
   text-shadow: none;
   /* font-style: italic; */
-  background-color: rgba(175, 56, 0, 0.75);
+  background-color: var(--wintergreen);
 }
 
 /*****  Download Button  *****/
 .btn {
   text-decoration: none;
   color: var(--alabaster);
-  background-color: var(--prussianblue);
+  background-color: var(--danger);
   display: inline-block;
   padding: 8px;
   text-shadow: none;
@@ -225,7 +230,7 @@ footer {
  /*****   Header and Footer  *****/
  header, footer {
    background-color: var(--alabaster);
-   color: var(--rustic);
+   color: var(--cordovan);
 }
 
 
@@ -236,7 +241,7 @@ h3 ~ p {
 
 .work {
   background-color: var(--mango);
-  background-image: radial-gradient(farthest-side at 83% 21%, rgba(255,255,255,0.9) , var(--mango) 90%);
+  background-image: radial-gradient(farthest-side at 83% 16%, rgba(255,255,255,0.65) , var(--mango) 90%);
 }
 
 .job-description {
