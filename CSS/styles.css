@@ -328,8 +328,30 @@ li.sidebside:first-of-type {
   display: none;
 }
 
+.in-learning{
+  position: relative;
+}
+
+.skill-assess {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+}
 .ed-link {
   color: white;
+}
+
+.skill-badge {
+  float: left;
+  list-style-type: none;
+  margin-right: 15px;
+  text-shadow: 2px 3px 6px #f7f7f2;
+}
+
+.cal {
+  color: var(--shamrock);
+
 }
 
 /*****  Thumbnail Hover Effects  *****/
