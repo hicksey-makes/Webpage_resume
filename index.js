@@ -18,8 +18,6 @@ var modal2 = document.getElementById('imgModal2');
 var modalImgUb = document.getElementById('img-ub');
 var captionText2 = document.getElementById('caption2');
 
-
-
 /* get first certificate image and insert in modal - use its "title" text as a caption */
 var img1 = document.getElementById('img-first');
 img1.onclick = function() {
@@ -126,7 +124,6 @@ img1.onclick = function() {
 /* Get the <span> element that closes the modal */
 var span1 = document.getElementsByClassName("exit")[0];
 var span2 = document.getElementsByClassName("exit2")[0];
-
 
 /* close the modal onclick of the <span> x */
 span1.onclick = function() {
