@@ -347,7 +347,9 @@ li.sidebside:first-of-type {
 .skill-badge {
   float: left;
   list-style-type: none;
-  margin-right: 15px;
+  background: url("../images/check-mark-blue-svg.svg") no-repeat center left;
+  margin: 0 15px 10px 15px;
+  padding-left: 25px;
   text-shadow: 2px 3px 6px #f7f7f2;
 }
 
