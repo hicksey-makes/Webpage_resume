@@ -29,7 +29,8 @@ html {
   --danger: #C73A3E;
   --cordovana: rgba(152, 68, 71, 0.55);
   --mangoa: rgba(252, 191, 73, 0.7);
-  --prussiana: rgba(37, 61, 91, 0.8);
+  --prussiana: rgba(37, 61, 91, 0.9);
+  --gunmetal: #143642;
 }
 
 *, *:before, *:after {
@@ -116,7 +117,7 @@ header {
 #oblique {
   font-style: oblique;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 header h1,
@@ -204,7 +205,7 @@ footer {
 }
 
 .content-info a {
-  color: var(--prussiana);
+  color: var(--alabaster);
   background-color: var(--mango);
   padding: 5px 15px;
   margin-top: 10px;
@@ -223,7 +224,7 @@ footer {
  #Contact h2, #Contact p {
    color: var(--prussianblue);
  }
- 
+
 
  /*****   Header and Footer  *****/
  header, footer {
