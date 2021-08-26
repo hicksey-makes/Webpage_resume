@@ -136,3 +136,17 @@ span1.onclick = function() {
 span2.onclick = function() {
   modal2.style.display = "none";
 }
+
+function generatePDF() {
+ var doc = new jsPDF();  //create jsPDF object
+  doc.fromHTML(document.getElementById("work"), // page element which you want to print as PDF
+  15,
+  15,
+  {
+    'width': 170  //set width
+  },
+  function(a)
+   {
+    doc.save("HTML2PDF.pdf"); // save file name as HTML2PDF.pdf
+  });
+}

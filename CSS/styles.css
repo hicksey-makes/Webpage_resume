@@ -11,18 +11,21 @@ html {
   --shamrock: #72aa86;
   --silver: #a9abad;
   --silverish: #DEDEDE;
-  --prussianblue: #253d5b;
   --thinblue: rgba(1, 25, 54, .6);
   --coral: #FF8B61;
   --rustic: #af3800;
-  --alabaster: #F3F1E7;
   --coffee: rgba(60, 55, 68, 1);
   --coffee-sub: rgba(60, 55, 68, 0.2);
   --royalblue: #011936;
-  --body-background: #859ca0;
-  --mango: #fcbf49;
+  --gunmetal: #143642;
   --minty: #DAFFEF;
   --gainsboro: #d7dae5;
+
+  /* new palette */
+  --body-background: #859ca0;
+  --mango: #fcbf49;
+  --prussianblue: #253d5b;
+  --alabaster: #F3F1E7;
   --cordovan: #984447;
   --wintergreen: #55917f;
   --prussiandark: #1b2c41;
@@ -30,7 +33,7 @@ html {
   --cordovana: rgba(152, 68, 71, 0.55);
   --mangoa: rgba(252, 191, 73, 0.7);
   --prussiana: rgba(37, 61, 91, 0.9);
-  --gunmetal: #143642;
+
 }
 
 *, *:before, *:after {
@@ -201,7 +204,6 @@ nav a:hover, .active {
 /**********  Footer  **********/
 footer {
   text-align:center;
-  color: var(--coffee);
 }
 
 .content-info a {

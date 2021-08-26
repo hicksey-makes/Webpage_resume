@@ -3,20 +3,22 @@
 <head>
   <script src="https://kit.fontawesome.com/58f0b2f89a.js" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Hicks | Resume</title>
     <link href="https://fonts.googleapis.com/css?family=Arsenal|Cabin:600i|Crimson+Text:600i" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css" media="screen" />
     <script type="text/javascript" src="index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
 </head>
 
-<body>
+<body id="html-page">
 
     <!-- Intro -->
 
     <header id="About">
-        <a href=Indexsam(html)%20(1).pdf class="btn download" download>Download PDF</a>
+        <a href="javascript:generatePDF()" class="btn download" download>Download PDF</a>
         <nav id="myNav">
             <a class="nav-link active" href="#About">About</a>
             <a class="nav-link" href="#Work">Work Experience</a>
