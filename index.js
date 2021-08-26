@@ -137,16 +137,13 @@ span2.onclick = function() {
   modal2.style.display = "none";
 }
 
-function generatePDF() {
- var doc = new jsPDF();  //create jsPDF object
-  doc.fromHTML(document.getElementById("work"), // page element which you want to print as PDF
-  15,
-  15,
-  {
-    'width': 170  //set width
-  },
-  function(a)
-   {
-    doc.save("HTML2PDF.pdf"); // save file name as HTML2PDF.pdf
-  });
-}
+$("#PrintNow").on("click", function () {
+            var divContents = $("#html-page").html();
+            var printWindow = window.open('', '', 'height=400,width=800');
+            printWindow.document.write('<html><head><title>DIV Contents</title>');
+            printWindow.document.write('</head><body >');
+            printWindow.document.write(divContents);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        });
