@@ -11,17 +11,29 @@ html {
   --shamrock: #72aa86;
   --silver: #a9abad;
   --silverish: #DEDEDE;
-  --prussianblue: #003049;
   --thinblue: rgba(1, 25, 54, .6);
   --coral: #FF8B61;
   --rustic: #af3800;
-  --alabaster: #EEEBDD;
   --coffee: rgba(60, 55, 68, 1);
   --coffee-sub: rgba(60, 55, 68, 0.2);
   --royalblue: #011936;
+  --gunmetal: #143642;
+  --minty: #DAFFEF;
+  --gainsboro: #d7dae5;
+
+  /* new palette */
   --body-background: #859ca0;
   --mango: #fcbf49;
-  --minty: #DAFFEF;
+  --prussianblue: #253d5b;
+  --alabaster: #F3F1E7;
+  --cordovan: #984447;
+  --wintergreen: #55917f;
+  --prussiandark: #1b2c41;
+  --danger: #C73A3E;
+  --cordovana: rgba(152, 68, 71, 0.55);
+  --mangoa: rgba(252, 191, 73, 0.7);
+  --prussiana: rgba(37, 61, 91, 0.9);
+
 }
 
 *, *:before, *:after {
@@ -56,7 +68,7 @@ h4 {
 
 h5 {
   margin: 0;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 h1, h2 {
@@ -70,9 +82,9 @@ p {
 
 a {
   background: none;
-  color: var(--mango);
+  color: #f4edea;
   text-decoration: none;
-  text-shadow: -2px -1px 4px var(--prussianblue), -4px 1px 4px #f4edea;
+  text-shadow: 2px 1px 3px var(--prussianblue), 2px 2px 2px var(--wintergreen);
 }
 
 .h-style {
@@ -108,12 +120,12 @@ header {
 #oblique {
   font-style: oblique;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 header h1,
 header h2 {
-  color: var(--prussianblue);
+  color: var(--prussiandark);
   margin: 0;
 }
 
@@ -149,7 +161,7 @@ header h2 {
 
 /*****  Navigation  *****/
 nav {
-  background-color: var(--silver);
+  background-color: var(--prussianblue);
   margin-bottom: 5px;
   text-align: center;
   position: fixed;
@@ -167,17 +179,19 @@ nav a {
 }
 
 nav a:hover, .active {
-  color: var(--minty);
+  color: whitesmoke;
   text-shadow: none;
   /* font-style: italic; */
-  background-color: var(--coffee);
+  background-color: var(--wintergreen);
 }
 
 /*****  Download Button  *****/
 .btn {
   text-decoration: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
   color: var(--alabaster);
-  background-color: var(--prussianblue);
+  background-color: var(--danger);
   display: inline-block;
   padding: 8px;
   text-shadow: none;
@@ -192,40 +206,34 @@ nav a:hover, .active {
 /**********  Footer  **********/
 footer {
   text-align:center;
-  color: var(--coffee);
 }
 
 .content-info a {
-  color: var(--minty);
-  background-color: var(--coffee);
+  color: var(--alabaster);
+  background-color: var(--mango);
   padding: 5px 15px;
   margin-top: 10px;
   margin-right: 15px;
   display: inline-block;
   font-size: 25px;
-  box-shadow: 1px 1px 4px var(--coffee);
+  box-shadow: 1px 1px 4px var(--prussiandark);
  }
 
  .content-info a:hover {
+   /* color: var(--wintergreen); */
+   box-shadow: 3px 3px 8px var(--prussiana);
+   background-color: var(--wintergreen);
+ }
+
+ #Contact h2, #Contact p {
    color: var(--prussianblue);
-   box-shadow: 3px 3px 8px var(--thinblue);
-   background-color: var(--coffee-sub);
  }
-
- #Contact h2 {
-   color: var(--coffee);
- }
-
- #Contact p {
-   color: var(--coffee);
- }
-
 
 
  /*****   Header and Footer  *****/
  header, footer {
    background-color: var(--alabaster);
-   color: var(--rustic);
+   color: var(--cordovan);
 }
 
 
@@ -236,7 +244,7 @@ h3 ~ p {
 
 .work {
   background-color: var(--mango);
-  background-image: radial-gradient(farthest-side at 83% 21%, rgba(255,255,255,0.9) , var(--mango) 90%);
+  background-image: radial-gradient(farthest-side at 83% 16%, rgba(255,255,255,0.65) , var(--mango) 90%);
 }
 
 .job-description {
@@ -282,7 +290,7 @@ p + h3 {
  }
 
 .education {
-  background: linear-gradient(rgba(252, 191, 73, 0.18), rgba(253, 82, 0, 0.32)),
+  background: linear-gradient(rgba(252, 191, 73, 0.25), var(--cordovana)),
   url(../images/mountaintop-education.jpg) no-repeat fixed;
   background-size: cover;
 }
@@ -324,8 +332,31 @@ li.sidebside:first-of-type {
   clear: left;
 }
 
-.shadow {
-  display: none;
+#certs-label {
+  margin-left: -15px;
+}
+
+#assess-label {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.ed-link {
+  color: #f4edea;
+  text-shadow: 2px 1px 7px var(--prussianblue), 1px 2px 4px var(--wintergreen);
+}
+
+.skill-badge {
+  float: left;
+  list-style-type: none;
+  background: url("../images/check-mark-blue-svg.svg") no-repeat center left;
+  margin: 0 15px 10px 15px;
+  padding-left: 25px;
+  text-shadow: 2px 3px 6px #f7f7f2;
+}
+
+.cal {
+  color: var(--wintergreen);
 }
 
 /*****  Thumbnail Hover Effects  *****/

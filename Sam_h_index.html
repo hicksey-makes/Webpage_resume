@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <script src="https://kit.fontawesome.com/58f0b2f89a.js" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Hicks | Resume</title>
     <link href="https://fonts.googleapis.com/css?family=Arsenal|Cabin:600i|Crimson+Text:600i" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css" media="screen" />
     <script type="text/javascript" src="index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,7 +18,8 @@
     <!-- Intro -->
 
     <header id="About">
-        <a href=Indexsam(html)%20(1).pdf class="btn download" download>Download PDF</a>
+        <!-- <a href="javascript:generatePDF()" class="btn download" download>Download PDF</a> -->
+        <button class="btn download" id="PrintNow">Download</button>
         <nav id="myNav">
             <a class="nav-link active" href="#About">About</a>
             <a class="nav-link" href="#Work">Work Experience</a>
@@ -34,9 +38,8 @@
         </div>
     </header>
     <main>
-
+      <div id="html-page">
         <!--- Work Experience --->
-
         <section class="work" id="Work">
           <div class="content-wrap">
               <h2>Work Experience</h2>
@@ -120,17 +123,16 @@
             <div class="container">
 
 
-
               <!--- school 1 details  --->
               <div class="item">
-                <h3 class="tighten h-style">inLEARNING&reg; - Remote</h3>
+                <h3 class="tighten h-style">LinkedIn Learning - Remote</h3>
                 <h4>Learning Path: Become a Front-End Web Developer, 2018 - Present</h4>
-                <p>Course certificates-of-completion:</p>
               </div>
 
               <div class="item">
                 <div class="container2">
                   <ul class="shrink1">
+                    <h5 id="certs-label">Course certificates-of-completion:</h5>
                     <li class="courses">Git Essential Training: The Basics</li>
                     <li class="courses">Python Essential Training</li>
                     <li class="courses">HTML Essential Training</li>
@@ -189,6 +191,25 @@
                   <img class="modal-inner1" id="img-01">
                   <div id="caption"></div>
                 </div>
+                <h5 id="assess-label">Skill Assessment Badges:</h5>
+                <ul>
+                  <li class="skill-badge">
+                    
+                       HTML
+                  </li>
+                  <li class="skill-badge">
+
+                       CSS
+                  </li>
+                  <li class="skill-badge">
+
+                       JavaScript
+                  </li>
+                  <li class="skill-badge">
+
+                       React.js
+                  </li>
+                </ul>
               </div>
 
 
@@ -201,28 +222,36 @@
 
               <div class="item">
                 <ul id="thefix">
-                    <li class="courses" title="https://learnjavascript.online">Course: Learn JavaScript</li>
-                    <li class="courses" title="https://react-tutorial.app">Course: React Tutorial</li>
-                    <li class="courses" title="www.w3schools.com">Webpage: W3Schools: HTML</li>
+                    <li class="courses" title="https://learnjavascript.online">Course: <a class="ed-link" href="https://learnjavascript.online" target="_blank">
+                    Learn JavaScript</a></li>
+                    <li class="courses" title="https://react-tutorial.app">Course: <a class="ed-link" href="https://react-tutorial.app" target="_blank">
+                      React Tutorial</a></li>
+                    <li class="courses" title="www.w3schools.com">Webpage: W3Schools: <a class="ed-link" href="https://www.w3schools.com/html/default.asp" target="_blank">
+                      HTML</a></li>
                       <ul>
                         <li class="sidebside">Exercises</li>
                         <li class="sidebside">Quiz</li>
                       </ul>
-                    <li class="courses" title="www.w3schools.com">Webpage: W3Schools: CSS</li>
+                    <li class="courses" title="www.w3schools.com">Webpage: W3Schools: <a class="ed-link" href="https://www.w3schools.com/css/default.asp" target="_blank">
+                      CSS</a></li>
                       <ul>
                         <li class="sidebside">Tutorial</li>
                         <li class="sidebside">Exercises</li>
                         <li class="sidebside">Quiz</li>
                       </ul>
-                    <li class="courses" title="www.w3schools.com">Webpage: W3Schools: Javascript</li>
+                    <li class="courses" title="www.w3schools.com">Webpage: W3Schools: <a class="ed-link" href="https://www.w3schools.com/js/default.asp" target="_blank">
+                      Javascript</a></li>
                       <ul>
                         <li class="sidebside">Exercises</li>
                         <li class="sidebside">Quiz</li>
                       </ul>
 
-                    <li class="courses" title="www.w3schools.com">Webpage: W3Schools: Bootstrap 4</li>
+                    <li class="courses" title="www.w3schools.com">Webpage: W3Schools: <a class="ed-link" href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank">
+                      Bootstrap 4</a></li>
                       <ul>
                         <li class="sidebside">Tutorial</li>
+                        <li class="sidebside">Exercises</li>
+                        <li class="sidebside">Quiz</li>
                       </ul>
                   </ul>
               </div>
@@ -256,6 +285,8 @@
             <!-- Add as many paragraphs as you need. -->
             <!-- End of school details. -->
         </section>
+      </div>
+
     </main>
 
     <!--- Footer & contact info  --->
