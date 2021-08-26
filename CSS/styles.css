@@ -87,10 +87,6 @@ a {
   text-shadow: 2px 1px 3px var(--prussianblue), 2px 2px 2px var(--wintergreen);
 }
 
-.h-style {
-  font-family: Helvetica, sans-serif;
-}
-
 .content-wrap {
   max-width: 950px;
   margin: 0 auto;
@@ -104,23 +100,17 @@ a {
   grid-gap:10px;
 }
 
-.Ucase {
-  text-transform: uppercase;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
 }
-
 
 /**********  Header  **********/
 header {
   font-weight: 500;
   padding-top: 50px;
   position: relative;
-
-}
-
-#oblique {
-  font-style: oblique;
-  font-weight: bold;
-  font-size: 21px;
 }
 
 header h1,
@@ -144,7 +134,7 @@ header h2 {
   height: auto;
   width: auto;
   border-radius: 55%;
-  }
+}
 
 .prof-pic {
   padding-left: 2px;
@@ -158,6 +148,13 @@ header h2 {
   right: 0;
   bottom: 0;
 }
+
+#oblique {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 21px;
+}
+
 
 /*****  Navigation  *****/
 nav {
@@ -181,7 +178,6 @@ nav a {
 nav a:hover, .active {
   color: whitesmoke;
   text-shadow: none;
-  /* font-style: italic; */
   background-color: var(--wintergreen);
 }
 
@@ -220,7 +216,6 @@ footer {
  }
 
  .content-info a:hover {
-   /* color: var(--wintergreen); */
    box-shadow: 3px 3px 8px var(--prussiana);
    background-color: var(--wintergreen);
  }
@@ -229,8 +224,6 @@ footer {
    color: var(--prussianblue);
  }
 
-
- /*****   Header and Footer  *****/
  header, footer {
    background-color: var(--alabaster);
    color: var(--cordovan);
@@ -240,6 +233,10 @@ footer {
 /**********  Work Experience  **********/
 h3 ~ p {
   margin: 0;
+}
+
+.Ucase {
+  text-transform: uppercase;
 }
 
 .work {
@@ -277,6 +274,10 @@ h3 ~ p {
 
 
 /**********  Education  **********/
+.h-style {
+  font-family: Helvetica, sans-serif;
+}
+
 p + h3 {
   margin-top: 30px;
 }
@@ -287,6 +288,7 @@ p + h3 {
 
 .courses {
   margin: 5px auto;
+  clear: left;
  }
 
 .education {
@@ -301,12 +303,6 @@ p + h3 {
 
 .img-att {
   margin-left: 24px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
 }
 
 .column {
@@ -328,19 +324,6 @@ li.sidebside:first-of-type {
   margin-left: 0;
 }
 
-.courses {
-  clear: left;
-}
-
-#certs-label {
-  margin-left: -15px;
-}
-
-#assess-label {
-  margin-left: 25px;
-  margin-top: 20px;
-}
-
 .ed-link {
   color: #f4edea;
   text-shadow: 2px 1px 7px var(--prussianblue), 1px 2px 4px var(--wintergreen);
@@ -357,6 +340,15 @@ li.sidebside:first-of-type {
 
 .cal {
   color: var(--wintergreen);
+}
+
+#certs-label {
+  margin-left: -15px;
+}
+
+#assess-label {
+  margin-left: 25px;
+  margin-top: 20px;
 }
 
 /*****  Thumbnail Hover Effects  *****/
@@ -505,14 +497,6 @@ li.sidebside:first-of-type {
 
   .img-att {
     margin-top: 23px;
-  }
-
-  .cloud {
-    display: none;
-  }
-
-  .shadow {
-    display: inline-block;
   }
 }
 
