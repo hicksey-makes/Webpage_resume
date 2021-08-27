@@ -46,6 +46,8 @@ body {
     font-family: Garamond, serif;
     font-size: 18px;
     margin: 0;
+    position: relative;
+    height: 1500px;
 }
 
 h1 {
@@ -181,6 +183,18 @@ nav a:hover, .active {
   background-color: var(--wintergreen);
 }
 
+.navbar {
+  position: fixed;
+  padding: 0 1rem 0 1rem;
+}
+
+.nav {
+  margin: auto;
+}
+
+.nav-link {
+  padding: .75rem 1.25rem;
+}
 /*****  Download Button  *****/
 .btn {
   text-decoration: none;
@@ -573,5 +587,8 @@ li.sidebside:first-of-type {
   }
   body {
     font-size: 19px;
+  }
+  .nav-link {
+    font-size: 23px;
   }
 }
