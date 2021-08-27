@@ -342,6 +342,10 @@ li.sidebside:first-of-type {
   color: var(--wintergreen);
 }
 
+.tut-prog {
+  margin-left: -15px;
+}
+
 #certs-label {
   margin-left: -15px;
 }
@@ -351,6 +355,9 @@ li.sidebside:first-of-type {
   margin-top: 20px;
 }
 
+#w3-head {
+  margin: 15px 0 10px -15px;
+}
 /*****  Thumbnail Hover Effects  *****/
 .cert-sm {
   border-radius: 2px;
