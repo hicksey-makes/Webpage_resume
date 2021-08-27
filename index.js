@@ -137,7 +137,7 @@ span2.onclick = function() {
 $("#PrintNow").on("click", function () {
             var divContents = $("#html-page").html();
             var printWindow = window.open('', '', 'height=400,width=800');
-            printWindow.document.write('<html><head><title>DIV Contents</title>');
+            printWindow.document.write('<html><head><title>Sam-H-Resume</title>');
             printWindow.document.write('</head><body >');
             printWindow.document.write(divContents);
             printWindow.document.write('</body></html>');
