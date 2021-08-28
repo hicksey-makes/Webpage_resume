@@ -136,10 +136,13 @@ span2.onclick = function() {
 
 $("#PrintNow").on("click", function () {
             var divContents = $("#html-page").html();
+            console.log(divContents.indexOf(`<div id="footStuff">`));
+            var contentToPrint = divContents.substring(0, 15573);
+            console.log(contentToPrint);
             var printWindow = window.open('', '', 'height=400,width=800');
             printWindow.document.write('<html><head><title>Sam-H-Resume</title>');
             printWindow.document.write('</head><body >');
-            printWindow.document.write(divContents);
+            printWindow.document.write(contentToPrint);
             printWindow.document.write('</body></html>');
             printWindow.document.close();
             printWindow.print();
