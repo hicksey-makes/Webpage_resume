@@ -134,6 +134,14 @@ span2.onclick = function() {
   modal2.style.display = "none";
 }
 
+var offset = 40;
+
+$('.navbar li a').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+});
+
 $("#PrintNow").on("click", function () {
             var divContents = $("#html-page").html();
             console.log(divContents.indexOf(`<div id="footStuff">`));

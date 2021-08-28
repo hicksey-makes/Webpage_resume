@@ -108,6 +108,10 @@ a {
   padding: 0;
 }
 
+/* #About, #Work, #Education, #Contact {
+  padding-top: 75px;
+} */
+
 /**********  Header  **********/
 header {
   font-weight: 500;
