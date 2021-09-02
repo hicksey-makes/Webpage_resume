@@ -1,39 +1,22 @@
 /**********  Global  **********/
 
-/*  rework  */
-$maximumyellowred: #fcbf4;
-
 html {
   box-sizing: border-box;
 }
 
 :root {
-  --shamrock: #72aa86;
-  --silver: #a9abad;
-  --silverish: #DEDEDE;
-  --thinblue: rgba(1, 25, 54, .6);
-  --coral: #FF8B61;
-  --rustic: #af3800;
-  --coffee: rgba(60, 55, 68, 1);
-  --coffee-sub: rgba(60, 55, 68, 0.2);
-  --royalblue: #011936;
-  --gunmetal: #143642;
-  --minty: #DAFFEF;
   --gainsboro: #d7dae5;
-
-  /* new palette */
-  --body-background: #859ca0;
-  --mango: #fcbf49;
-  --prussianblue: #253d5b;
-  --alabaster: #F3F1E7;
-  --cordovan: #984447;
-  --wintergreen: #55917f;
-  --prussiandark: #1b2c41;
+  --blue-pewter: #859ca0;
+  --lime: #c7fc49;
+  --light-lime: rgba(199, 252, 73, 0.1);
+  --violet: #30265c;
+  --ivory: #edf2e6;
+  --brown: #855E23;
+  --teal: #567d91;
+  --dark-violet: #1E183A;
   --danger: #C73A3E;
-  --cordovana: rgba(152, 68, 71, 0.40);
-  --mangoa: rgba(252, 191, 73, 0.7);
-  --prussiana: rgba(37, 61, 91, 0.9);
-  --lightr: #f4edea;
+  --bistre: rgba(166, 117, 43, 0.33);
+  --light-silver: #DEDEDE;
 }
 
 *, *:before, *:after {
@@ -41,7 +24,7 @@ html {
 }
 
 body {
-    background-color: var(--body-background);
+    background-color: var(--blue-pewter);
     color: black;
     font-family: Garamond, serif;
     font-size: 18px;
@@ -87,7 +70,7 @@ a {
   background: none;
   color: var(--gainsboro);
   text-decoration: none;
-  text-shadow: 2px 1px 3px var(--prussianblue), 2px 2px 2px var(--wintergreen);
+  text-shadow: 2px 1px 3px var(--violet), 2px 2px 2px var(--teal);
 }
 
 .content-wrap {
@@ -99,7 +82,7 @@ a {
 
 .container {
   display: grid;
-  grid-template-columns: minmax(250px, 400px) minmax(300px, 1fr);
+  grid-template-columns: minmax(250px, 400px) minmax(400px, 800px);
   grid-gap:10px;
 }
 
@@ -107,6 +90,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin-right: 0px;
+  margin-left: 0;
 }
 
 /**********  Header  **********/
@@ -118,7 +103,7 @@ header {
 
 header h1,
 header h2 {
-  color: var(--prussiandark);
+  color: var(--dark-violet);
   margin: 0;
 }
 
@@ -161,7 +146,7 @@ header h2 {
 
 /*****  Navigation  *****/
 nav {
-  background-color: var(--prussianblue);
+  background-color: var(--violet);
   margin-bottom: 5px;
   text-align: center;
   top: 0;
@@ -180,7 +165,7 @@ nav a {
 nav a:hover, .active {
   color: whitesmoke;
   text-shadow: none;
-  background-color: var(--wintergreen);
+  background-color: var(--teal);
 }
 
 #brand {
@@ -191,6 +176,7 @@ nav a:hover, .active {
   text-transform: uppercase;
   margin-right: 12px;
   color: var(--gainsboro);
+  text-shadow: 3px 2px 11px var(--lime);
 }
 
 .brand {
@@ -200,7 +186,7 @@ nav a:hover, .active {
 
 .navbar {
   position: fixed;
-  padding: 0 1rem 0 1rem;
+  padding: 0 0rem 0 0rem;
 }
 
 .nav-link {
@@ -211,17 +197,21 @@ nav a:hover, .active {
 .btn {
   text-decoration: none;
   font-family: "Helvetica", sans-serif;
-  font-size: 16px;
-  color: var(--alabaster);
-  background-color: var(--danger);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--violet);
+  border: 1px solid var(--violet);
+  box-shadow: -2px -3px 16px var(--teal);
+  background-color: var(--ivory);
   display: inline-block;
-  padding: 8px;
+  padding: 6px;
   text-shadow: none;
 }
 
 .btn:hover {
-  color: var(--silver);
-  text-shadow: 4px 5px 4px var(--thinblue);
+  color: var(--ivory);
+  background-color: var(--teal);
+  box-shadow: 2px 3px 4px var(--violet);
 }
 
 
@@ -231,29 +221,30 @@ footer {
 }
 
 .content-info a {
-  color: var(--gunmetal);
+  color: var(--brown);
   background-color: var(--gainsboro);
   padding: 5px 15px;
   margin-top: 10px;
   margin-right: 15px;
   display: inline-block;
   font-size: 25px;
-  box-shadow: 3px 3px 5px var(--prussiandark);
+  box-shadow: 3px 3px 5px var(--dark-violet);
  }
 
  .content-info a:hover {
+   color: var(--ivory);
    box-shadow: none;
-   border: 1px solid var(--gunmetal);
-   background-color: var(--mango);
+   border: 1px solid var(--dark-violet);
+   background-color: var(--teal);
  }
 
  #Contact h2 {
-   color: var(--prussianblue);
+   color: var(--violet);
  }
 
  header, footer {
-   background-color: var(--alabaster);
-   color: var(--cordovan);
+   background-color: var(--ivory);
+   color: var(--brown);
 }
 
 
@@ -267,8 +258,8 @@ h3 ~ p {
 }
 
 .work {
-  background-color: var(--mango);
-  background-image: radial-gradient(farthest-side at 83% 16%, rgba(255,255,255,0.65) , var(--mango) 90%);
+  background-color: var(--lime);
+  background-image: radial-gradient(farthest-side at 83% 16%, rgba(255,255,255,0.68) , var(--lime) 90%);
 }
 
 .job-description {
@@ -319,7 +310,7 @@ p + h3 {
  }
 
 .education {
-  background: linear-gradient(rgba(252, 191, 73, 0.25), var(--cordovana)),
+  background: linear-gradient(var(--light-lime), var(--bistre)),
   url(../images/mountaintop-education.jpg) no-repeat fixed;
   background-size: cover;
 }
@@ -328,9 +319,9 @@ p + h3 {
   margin-top: 17px;
 }
 
-.img-att {
+/* .img-att {
   margin-left: 24px;
-}
+} */
 
 .column {
   flex: 20%;
@@ -353,7 +344,7 @@ li.sidebside:first-of-type {
 
 .ed-link {
   color: #f4edea;
-  text-shadow: 2px 1px 7px var(--prussianblue), 1px 2px 4px var(--wintergreen);
+  text-shadow: 2px 1px 7px var(--violet), 1px 2px 4px var(--teal);
 }
 
 .skill-badge {
@@ -366,7 +357,7 @@ li.sidebside:first-of-type {
 }
 
 .cal {
-  color: var(--wintergreen);
+  color: var(--teal);
 }
 
 .tut-prog {
@@ -384,6 +375,11 @@ li.sidebside:first-of-type {
 
 #w3-head {
   margin: 15px 0 10px -15px;
+}
+
+#left-align {
+  margin-left: 0px;
+  padding-left: 3px;
 }
 /*****  Thumbnail Hover Effects  *****/
 .cert-sm {
@@ -409,7 +405,7 @@ li.sidebside:first-of-type {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: var(--prussianblue);
+  background-color: var(--violet);
 }
 
 /*****  Modal Content (Image) *****/
@@ -434,7 +430,7 @@ li.sidebside:first-of-type {
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: var(--silverish);
+  color: var(--light-silver);
   padding: 10px 0;
   height: 150px;
 }
@@ -455,7 +451,7 @@ li.sidebside:first-of-type {
   position: absolute;
   top: 20px;
   right: 35px;
-  color: var(--silverish);
+  color: var(--light-silver);
   font-size: 55px;
   font-weight: bold;
   transition: 0.3s;
@@ -524,17 +520,21 @@ li.sidebside:first-of-type {
      margin-bottom: 0px;
      }
 
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+
 
   .img-att {
     margin-top: 23px;
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 992px) {
+  .column {
+    flex: 30%;
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 730px) {
  .container {
    grid-template-columns: 1fr;
   }
@@ -545,12 +545,18 @@ li.sidebside:first-of-type {
   }
 
   .column {
-    flex: 33.33%;
-    max-width: 33.33%;
+    flex: 20%;
+    max-width: 20%;
   }
 
   .img-att {
     margin-top: 23px;
+  }
+}
+@media (max-width: 540px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
   }
 }
 
@@ -583,13 +589,15 @@ li.sidebside:first-of-type {
  }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 992px) {
  .container2 {
    display: grid;
    grid-template-columns: minmax(250px, 400px) minmax(300px, 1fr);
    grid-gap: 10px;
    }
 }
+
+
 
 @media only screen and (min-width: 1100px) {
   h1 {
