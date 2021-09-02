@@ -163,7 +163,7 @@ nav {
   background-color: var(--prussianblue);
   margin-bottom: 5px;
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
@@ -194,6 +194,11 @@ nav a:hover, .active {
 
 .nav-link {
   font-size: 20px;
+}
+
+.navbar-toggler-icon {
+  color: white;
+  border: solid white;
 }
 /*****  Download Button  *****/
 .btn {
