@@ -270,18 +270,15 @@ h3 ~ p {
   margin-top: 30px;
 }
 
-.job-description li:first-of-type {
-  margin-top: -10px;
-}
-
-.training {
-  margin: 5px auto;
-}
-
 .job-title {
   margin-bottom: 5px;
   font-style: italic;
   font-size: 1.2em;
+  font-weight: bold;
+}
+
+.work-list {
+  margin-top: 7px;
 }
 
 #img-ninth {
@@ -294,6 +291,8 @@ h3 ~ p {
 /**********  Education  **********/
 .h-style {
   font-family: Helvetica, sans-serif;
+  font-size: 1.17em;
+  font-weight: 600;
 }
 
 p + h3 {
