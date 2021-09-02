@@ -164,7 +164,6 @@ nav {
   background-color: var(--prussianblue);
   margin-bottom: 5px;
   text-align: center;
-  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
@@ -190,26 +189,23 @@ nav a:hover, .active {
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+  margin-right: 12px;
 }
+
+.brand {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
 .navbar {
   position: fixed;
   padding: 0 1rem 0 1rem;
-}
-/* ul.navbar-nav {
-  margin: auto;
-} */
-.nav {
-  margin: auto;
 }
 
 .nav-link {
   font-size: 21px;
 }
 
-/* .navbar-toggler-icon {
-  color: white;
-  border: solid white;
-} */
 /*****  Download Button  *****/
 .btn {
   text-decoration: none;
