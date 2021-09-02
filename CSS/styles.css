@@ -30,7 +30,7 @@ html {
   --wintergreen: #55917f;
   --prussiandark: #1b2c41;
   --danger: #C73A3E;
-  --cordovana: rgba(152, 68, 71, 0.55);
+  --cordovana: rgba(152, 68, 71, 0.40);
   --mangoa: rgba(252, 191, 73, 0.7);
   --prussiana: rgba(37, 61, 91, 0.9);
   --lightr: #f4edea;
@@ -247,7 +247,7 @@ footer {
    background-color: var(--mango);
  }
 
- #Contact h2, #Contact p {
+ #Contact h2 {
    color: var(--prussianblue);
  }
 
