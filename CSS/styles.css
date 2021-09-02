@@ -318,6 +318,11 @@ p + h3 {
   margin-top: 17px;
 }
 
+.ed-desc {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /* .img-att {
   margin-left: 24px;
 } */
