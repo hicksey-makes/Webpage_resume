@@ -183,23 +183,32 @@ nav a:hover, .active {
   background-color: var(--wintergreen);
 }
 
+#brand {
+  display: inline-block;
+  padding: 9px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 .navbar {
   position: fixed;
   padding: 0 1rem 0 1rem;
 }
-
+/* ul.navbar-nav {
+  margin: auto;
+} */
 .nav {
   margin: auto;
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: 21px;
 }
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
   color: white;
   border: solid white;
-}
+} */
 /*****  Download Button  *****/
 .btn {
   text-decoration: none;
@@ -592,8 +601,5 @@ li.sidebside:first-of-type {
   }
   body {
     font-size: 19px;
-  }
-  .nav-link {
-    font-size: 23px;
   }
 }
