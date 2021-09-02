@@ -33,7 +33,7 @@ html {
   --cordovana: rgba(152, 68, 71, 0.55);
   --mangoa: rgba(252, 191, 73, 0.7);
   --prussiana: rgba(37, 61, 91, 0.9);
-
+  --lightr: #f4edea;
 }
 
 *, *:before, *:after {
@@ -85,7 +85,7 @@ p {
 
 a {
   background: none;
-  color: #f4edea;
+  color: var(--gainsboro);
   text-decoration: none;
   text-shadow: 2px 1px 3px var(--prussianblue), 2px 2px 2px var(--wintergreen);
 }
@@ -190,6 +190,7 @@ nav a:hover, .active {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 12px;
+  color: var(--gainsboro);
 }
 
 .brand {
@@ -230,19 +231,20 @@ footer {
 }
 
 .content-info a {
-  color: var(--alabaster);
-  background-color: var(--mango);
+  color: var(--gunmetal);
+  background-color: var(--gainsboro);
   padding: 5px 15px;
   margin-top: 10px;
   margin-right: 15px;
   display: inline-block;
   font-size: 25px;
-  box-shadow: 1px 1px 4px var(--prussiandark);
+  box-shadow: 3px 3px 5px var(--prussiandark);
  }
 
  .content-info a:hover {
-   box-shadow: 3px 3px 8px var(--prussiana);
-   background-color: var(--wintergreen);
+   box-shadow: none;
+   border: 1px solid var(--gunmetal);
+   background-color: var(--mango);
  }
 
  #Contact h2, #Contact p {
