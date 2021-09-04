@@ -134,12 +134,23 @@ span2.onclick = function() {
   modal2.style.display = "none";
 }
 
+var offset = 40;
+
+$('.navbar li a').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+});
+
 $("#PrintNow").on("click", function () {
             var divContents = $("#html-page").html();
+            console.log(divContents.indexOf(`<div id="footStuff">`));
+            var contentToPrint = divContents.substring(0, 16864);
+            console.log(contentToPrint);
             var printWindow = window.open('', '', 'height=400,width=800');
             printWindow.document.write('<html><head><title>Sam-H-Resume</title>');
             printWindow.document.write('</head><body >');
-            printWindow.document.write(divContents);
+            printWindow.document.write(contentToPrint);
             printWindow.document.write('</body></html>');
             printWindow.document.close();
             printWindow.print();

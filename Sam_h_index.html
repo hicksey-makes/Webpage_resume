@@ -4,24 +4,47 @@
     <script src="https://kit.fontawesome.com/58f0b2f89a.js" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Sam Hicks | Resume</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Arsenal|Cabin:600i|Crimson+Text:600i" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css" media="screen" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="index.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#myNav" data-offset="50">
     <!-- Intro -->
     <div id="html-page">
     <header id="About">
         <!-- <a href="javascript:generatePDF()" class="btn download" download>Download PDF</a> -->
         <button class="btn download" id="PrintNow">Download</button>
-        <nav id="myNav">
-            <a class="nav-link active" href="#About">About</a>
-            <a class="nav-link" href="#Work">Work Experience</a>
-            <a class="nav-link" href="#Education">Education</a>
-            <a class="nav-link" href="#Contact">Contact</a>
+        <nav id="myNav" class="navbar navbar-expand-md navbar-fixed-top">
+          <span class="navbar-text" id="brand" href="#">Hicksey</span>
+
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler brand" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span><i class="fas fa-bars mt-2"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Work">Work Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
         </nav>
         <div class= "content-wrap heading">
           <div class="prof-pic">
@@ -35,7 +58,6 @@
         </div>
     </header>
     <main>
-
 
         <!--- Work Experience --->
         <section class="work" id="Work">
@@ -51,7 +73,7 @@
 
               <div class="col-wide job-description">
                   <p>Accomplishments:</p>
-                    <ul>
+                    <ul class="work-list">
                       <li class="training">4.95 rating.</li>
                       <li class="training">3,500 lifetime rides.</li>
                     </ul>
@@ -73,7 +95,7 @@
 
               <div class="col-wide job-description">
                 <p>Accomplishments:</p>
-                  <ul>
+                  <ul class="work-list">
                     <li class="training">Complimented to management by colleagues.</li>
                     <li class="training">Progressed through program extension for exemplary performance.</li>
                   </ul>
@@ -88,7 +110,7 @@
 
               <div class="col-wide job-description">
                 <p>Accomplishments:</p>
-                  <ul>
+                  <ul class="work-list">
                     <li class="training">Exceeded company salesperson standard of $80/customer ticket average.</li>
                     <li class="training">Recognized for laudable performance with trip to nuggets game.</li>
                   </ul>
@@ -103,7 +125,7 @@
 
               <div class="col-wide job-description">
                 <p>Accomplishments:</p>
-                  <ul>
+                  <ul class="work-list">
                     <li class="training">Passed all secret-shop evaluations (including twice at 100%).</li>
                     <li class="training">2x Service-Star recognized.</li>
                     <li class="training">Designated as point-person in absence of manager.</li>
@@ -117,17 +139,17 @@
         <section class="education" id="Education">
           <div class="content-wrap">
           <h2>Education</h2>
-            <div class="container">
+            <div class="container" id="left-align">
 
               <!--- school 1 details  --->
               <div class="item">
                 <h3 class="tighten h-style">LinkedIn Learning - Remote</h3>
-                <h4>Learning Path: Become a Front-End Web Developer, 2018 - Present</h4>
+                <h4 class="ed-desc">Learning Path: Become a Frontend-Web Developer, 2018 - Present</h4>
               </div>
               <div class="item">
                 <div class="container2">
                   <ul class="shrink1">
-                    <h5 id="certs-label">Course certificates-of-completion:</h5>
+                    <h5>Course certificates-of-completion:</h5>
                     <li class="courses">Git Essential Training: The Basics</li>
                     <li class="courses">Python Essential Training</li>
                     <li class="courses">HTML Essential Training</li>
@@ -186,8 +208,9 @@
                   <img class="modal-inner1" id="img-01">
                   <div id="caption"></div>
                 </div>
-                <h5 id="assess-label">Skill Assessment Badges:</h5>
+
                 <ul>
+                  <h5 id="assess-label">Skill Assessment Badges:</h5>
                   <li class="skill-badge">HTML
                   </li>
                   <li class="skill-badge">CSS
@@ -202,14 +225,15 @@
               <!--- school 2 details  --->
               <div class="item">
                 <h3 class="tighten h-style">Miscellaneous - Remote</h3>
-                <h4>Online paid-or-free-educational resources, 2020 - 2021</h4>
-                <p>Resources:</p>
+                <h4 class="ed-desc">Online paid or free educational resources, 2020 - 2021</h4>
+
               </div>
               <div class="item">
                 <ul>
-                    <li class="courses" title="https://learnjavascript.online">Course: <a class="ed-link" href="https://learnjavascript.online" target="_blank">
+                  <h5>Courses:</h5>
+                    <li class="courses" title="https://learnjavascript.online"><a class="ed-link" href="https://learnjavascript.online" target="_blank">
                     Learn JavaScript</a></li>
-                    <li class="courses" title="https://react-tutorial.app">Course: <a class="ed-link" href="https://react-tutorial.app" target="_blank">
+                    <li class="courses" title="https://react-tutorial.app"><a class="ed-link" href="https://react-tutorial.app" target="_blank">
                     React Tutorial</a></li>
                     <h5 class="courses" id="w3-head" title="www.w3schools.com">Webpage: W3Schools:</h5>
                     <li class="courses" title="www.w3schools.com"><a class="ed-link" href="https://www.w3schools.com/html/default.asp" target="_blank">
@@ -255,12 +279,13 @@
 
               <!--- school 2 details  --->
               <div class="item">
-                <h3 class="tighten Uc">University of Colorado @ Boulder - Boulder, CO</h3>
-                <h4>Lower-level-mechanical engineering studies, 2008 - 2011</h4>
-                <p>Junior &amp; below-level engineering, math, science and humanities:</p>
+                <h3 class="tighten Uc h-style">University of Colorado @ Boulder - Boulder, CO</h3>
+                <h4 class="ed-desc">Lower level-mechanical engineering studies, 2008 - 2011</h4>
+
               </div>
               <div class="item">
                 <ul>
+                  <h5>Junior &amp; below-level engineering, math, science and humanities:</h5>
                     <li class="courses">Intro to Engineering Projects</li>
                     <li class="courses">Calculus 1, 2 &amp; 3</li>
                     <li class="courses">Differential Equations &amp; Applied Linear Algebra</li>
@@ -276,9 +301,9 @@
             </div>
           </div>
         </section>
-      </div>
-    </main>
 
+    </main>
+    <div id="footStuff">
     <!--- Footer & contact info  --->
     <footer id="Contact">
         <div class="content-wrap">
@@ -302,5 +327,7 @@
           <p>Copyright 2021 by Sam Hicks</p>
         </div>
     </footer>
+    </div>
+  </div>
   </body>
 </html>
