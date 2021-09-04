@@ -324,9 +324,13 @@ p + h3 {
   font-weight: bold;
 }
 
-/* .img-att {
-  margin-left: 24px;
-} */
+ul h5:first-child {
+  margin-top: 19px;
+}
+
+ul.shrink1 h5 {
+  margin-top: 0;
+}
 
 .column {
   flex: 20%;
@@ -347,9 +351,13 @@ li.sidebside:first-of-type {
   margin-left: 0;
 }
 
-.ed-link {
-  color: #f4edea;
-  text-shadow: 2px 1px 7px var(--violet), 1px 2px 4px var(--teal);
+a.ed-link {
+  color: var(--violet);
+  text-shadow: 2px 4px 7px var(--ivory), 1px 2px 4px var(--teal);
+}
+
+li.courses a:hover {
+  color: var(--lime)
 }
 
 .skill-badge {
@@ -368,18 +376,17 @@ li.sidebside:first-of-type {
 .tut-prog {
   margin-left: -15px;
 }
-
-#certs-label {
-  margin-left: -15px;
+a.ed-link:hover {
+  text-decoration: none;
+  color: var(--violet);
 }
 
 #assess-label {
-  margin-left: 25px;
-  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 #w3-head {
-  margin: 15px 0 10px -15px;
+  margin: 20px 0 10px 0;
 }
 
 #left-align {
