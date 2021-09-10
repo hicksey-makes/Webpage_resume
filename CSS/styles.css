@@ -17,6 +17,7 @@ html {
   --danger: #C73A3E;
   --bistre: rgba(166, 117, 43, 0.33);
   --light-silver: #DEDEDE;
+  --light-blue: rgba(133, 156, 160, 0.1);
 }
 
 *, *:before, *:after {
@@ -288,6 +289,10 @@ h3 ~ p {
   object-fit: cover;
 }
 
+.projects {
+  background-color: var(--blue-pewter);
+}
+
 
 /**********  Education  **********/
 .h-style {
@@ -310,7 +315,7 @@ p + h3 {
  }
 
 .education {
-  background: linear-gradient(var(--light-lime), var(--bistre)),
+  background: linear-gradient(var(--light-blue), var(--bistre)),
   url(../images/mountaintop-education.jpg) no-repeat fixed;
   background-size: cover;
 }
