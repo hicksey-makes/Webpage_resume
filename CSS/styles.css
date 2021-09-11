@@ -17,6 +17,7 @@ html {
   --danger: #C73A3E;
   --bistre: rgba(166, 117, 43, 0.33);
   --light-silver: #DEDEDE;
+  --light-blue: rgba(133, 156, 160, 0.2);
 }
 
 *, *:before, *:after {
@@ -191,7 +192,7 @@ nav a:hover, .active {
 }
 
 .nav-link {
-  font-size: 21px;
+  font-size: 19px;
 }
 
 /*****  Download Button  *****/
@@ -288,6 +289,12 @@ h3 ~ p {
   object-fit: cover;
 }
 
+.projects {
+  background-color: var(--blue-pewter);
+  background-image: radial-gradient(farthest-side at 83% 126%, rgba(255,255,255,0.68) , var(--blue-pewter) 90%);
+
+}
+
 
 /**********  Education  **********/
 .h-style {
@@ -310,7 +317,7 @@ p + h3 {
  }
 
 .education {
-  background: linear-gradient(var(--light-lime), var(--bistre)),
+  background: linear-gradient(var(--light-blue), var(--bistre)),
   url(../images/mountaintop-education.jpg) no-repeat fixed;
   background-size: cover;
 }
