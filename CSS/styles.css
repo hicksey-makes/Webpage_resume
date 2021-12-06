@@ -458,6 +458,13 @@ a.ed-link:hover {
   max-height: 700px;
 }
 
+.modal-inner3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
 /*****  Caption of Modal Image  *****/
 #caption, #caption2 {
   margin: auto;
