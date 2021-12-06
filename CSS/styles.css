@@ -254,7 +254,7 @@ footer {
 }
 
 #ski-link {
-  color: var(--violet);
+    /* color: var(--violet); */
     text-shadow: 5px 4px 13px var(--brown), 1px 1px 6px var(--violet);
     margin-left: 38px;
 }
