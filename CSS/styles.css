@@ -195,6 +195,10 @@ nav a:hover, .active {
   font-size: 19px;
 }
 
+#collapsibleNavbar {
+  justify-content: center;
+}
+
 /*****  Download Button  *****/
 .btn {
   text-decoration: none;

@@ -134,7 +134,7 @@ span2.onclick = function() {
   modal2.style.display = "none";
 }
 
-var offset = -15;
+var offset = 0;
 
 $('.navbar li a').click(function(event) {
     event.preventDefault();
