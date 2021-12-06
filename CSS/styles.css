@@ -466,7 +466,7 @@ a.ed-link:hover {
 }
 
 /*****  Caption of Modal Image  *****/
-#caption, #caption2 {
+#caption, #caption2, #caption3, #caption4 {
   margin: auto;
   display: block;
   width: 80%;
@@ -478,7 +478,7 @@ a.ed-link:hover {
 }
 
 /*****  Add Animation  *****/
-.modal-inner1, .modal-inner2, #caption, #caption2 {
+.modal-inner1, .modal-inner2, .modal-inner3, #caption, #caption2, #caption3, #caption4 {
   animation-name: zoom;
   animation-duration: 1.3s;
 }
@@ -489,7 +489,7 @@ a.ed-link:hover {
 }
 
 /*****  Close Button  *****/
-.exit, .exit2 {
+.exit, .exit2, .exit3, .exit4 {
   position: absolute;
   top: 20px;
   right: 35px;
@@ -499,7 +499,7 @@ a.ed-link:hover {
   transition: 0.3s;
 }
 
-.exit:hover, .exit:focus, .exit2:hover, .exit2:focus {
+.exit:hover, .exit:focus, .exit2:hover, .exit2:focus, .exit3:hover, .exit3:focus, .exit4:hover, .exit4:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
