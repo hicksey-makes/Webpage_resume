@@ -300,11 +300,23 @@ h3 ~ p {
 }
 
 #img-ninth {
-  margin-left: 25px;
-  margin-bottom: 0;
+  margin-left: 5px;
   object-fit: cover;
 }
 
+.work-modals {
+  margin-left: 25px;
+  display: inline-block;
+  /* object-fit: cover; */
+}
+
+.tnail-caps {
+  font-size: 12px;
+}
+
+.tnail-center {
+  margin-left: 20px;
+}
 .projects {
   background-color: var(--blue-pewter);
   background-image: radial-gradient(farthest-side at 83% 126%, rgba(255,255,255,0.68) , var(--blue-pewter) 90%);
@@ -461,8 +473,8 @@ a.ed-link:hover {
 .modal-inner3 {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  height: 100%;
+  max-height: 686px;
 }
 
 /*****  Caption of Modal Image  *****/
@@ -522,8 +534,9 @@ a.ed-link:hover {
 }
 
 @media only screen and (max-width: 700px) {
-  .modal-inner1 {
+  .modal-inner1, .modal-inner3 {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -539,7 +552,6 @@ a.ed-link:hover {
    text-align: center;
    justify-content: space-around;
    }
-
  .prof-pic {
    order: -1;
   }
@@ -556,14 +568,10 @@ a.ed-link:hover {
    margin-top: 19px;
    margin-bottom: 0px;
    }
-
   .shrink2 {
      margin-top: 0px;
      margin-bottom: 0px;
      }
-
-
-
   .img-att {
     margin-top: 23px;
   }
@@ -580,21 +588,19 @@ a.ed-link:hover {
  .container {
    grid-template-columns: 1fr;
   }
-
   .img-att {
     margin: 0;
     padding: 0;
   }
-
   .column {
     flex: 20%;
     max-width: 20%;
   }
-
   .img-att {
     margin-top: 23px;
   }
 }
+
 @media (max-width: 540px) {
   .column {
     flex: 50%;
@@ -622,7 +628,6 @@ a.ed-link:hover {
    float: left;
    margin: 0;
 }
-
  .col-wide {
    width: 69%;
    float: left;
@@ -638,8 +643,6 @@ a.ed-link:hover {
    grid-gap: 10px;
    }
 }
-
-
 
 @media only screen and (min-width: 1100px) {
   h1 {
