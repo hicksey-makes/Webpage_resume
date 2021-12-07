@@ -156,29 +156,23 @@ nav {
   right: 0;
 }
 
+nav div {
+  justify-content: center;
+}
+
 nav a {
   display: inline-block;
-  padding: 12px 20px;
-  font-weight: bold;
+  padding: 5px 17px !important;
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Acme', sans-serif;
 }
 
 nav a:hover, .active {
   color: whitesmoke;
   text-shadow: none;
   background-color: var(--teal);
-}
-
-#brand {
-  display: inline-block;
-  padding: 9px 20px;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-right: 12px;
-  color: var(--gainsboro);
-  text-shadow: 3px 2px 11px var(--lime);
 }
 
 .brand {
@@ -191,11 +185,7 @@ nav a:hover, .active {
   padding: 0 0rem 0 0rem;
 }
 
-.nav-link {
-  font-size: 19px;
-}
-
-#collapsibleNavbar {
+#collapsibleuNavbar {
   justify-content: center;
 }
 
