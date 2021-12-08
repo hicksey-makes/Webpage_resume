@@ -18,6 +18,14 @@ var modal2 = document.getElementById('imgModal2');
 var modalImgUb = document.getElementById('img-ub');
 var captionText2 = document.getElementById('caption2');
 
+var modal3 = document.getElementById('imgModal3');
+var modalImgCFbefore = document.getElementById('img-clickf-b');
+var captionText3 = document.getElementById('caption3');
+
+var modal4 = document.getElementById('imgModal4');
+var modalImgCFafter = document.getElementById('img-clickf-a');
+var captionText4 = document.getElementById('caption4');
+
 /* get first certificate image and insert in modal - use its "title" text as a caption */
 var img1 = document.getElementById('img-first');
 img1.onclick = function() {
@@ -121,9 +129,27 @@ img1.onclick = function() {
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
 }
+
+/* fourteenth certificate image */
+var img1 = document.getElementById('img-fourteenth');
+img1.onclick = function() {
+  modal3.style.display = "block";
+  modalImgCFbefore.src = this.src;
+  captionText3.innerHTML = this.title;
+}
+
+/* fifteenth certificate image */
+var img1 = document.getElementById('img-fifteenth');
+img1.onclick = function() {
+  modal4.style.display = "block";
+  modalImgCFafter.src = this.src;
+  captionText4.innerHTML = this.title;
+}
 /* Get the <span> element that closes the modal */
 var span1 = document.getElementsByClassName("exit")[0];
 var span2 = document.getElementsByClassName("exit2")[0];
+var span3 = document.getElementsByClassName("exit3")[0];
+var span4 = document.getElementsByClassName("exit4")[0];
 
 /* close the modal onclick of the <span> x */
 span1.onclick = function() {
@@ -134,7 +160,15 @@ span2.onclick = function() {
   modal2.style.display = "none";
 }
 
-var offset = 40;
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+
+span4.onclick = function() {
+  modal4.style.display = "none";
+}
+
+var offset = 0;
 
 $('.navbar li a').click(function(event) {
     event.preventDefault();
