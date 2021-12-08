@@ -5,9 +5,10 @@ html {
 }
 
 :root {
-  --gainsboro: #d7dae5;
+  --gainsboro: #D3DED7;
   --blue-pewter: #859ca0;
   --blue-munsell: #3891A6;
+  --blue-middle: #6dc9de;
   --lime: #c7fc49;
   --light-lime: rgba(199, 252, 73, 0.1);
   --violet: #30265c;
@@ -72,7 +73,7 @@ p {
 
 a {
   background: none;
-  color: var(--gainsboro);
+  color: var(--blue-middle);
   text-decoration: none;
 }
 
@@ -171,7 +172,7 @@ nav a {
 }
 
 nav a:hover, .active {
-  color: whitesmoke;
+   color: var(--violet);
   text-shadow: none;
   background-color: var(--blue-munsell);
 }
@@ -193,21 +194,19 @@ nav a:hover, .active {
 /*****  Download Button  *****/
 .btn {
   text-decoration: none;
-  font-family: "Helvetica", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
-  color: var(--violet);
-  border: 1px solid var(--violet);
-  box-shadow: -2px -3px 16px var(--teal);
+  color: var(--blue-munsell);
+  box-shadow: -2px 2px 10px var(--greeney);
   background-color: var(--ivory);
   display: inline-block;
-  padding: 6px;
+  padding: 8px;
   text-shadow: none;
 }
 
 .btn:hover {
   color: var(--ivory);
-  background-color: var(--teal);
+  background-color: var(--violet);
   box-shadow: 2px 3px 4px var(--violet);
 }
 
@@ -314,7 +313,7 @@ figure {
 }
 .projects {
   background-color: var(--greeney);
-  background-image: radial-gradient(farthest-side at 117% 11%, rgba(255,255,255,0.51) , var(--greeney) 89%);
+  background-image: radial-gradient(farthest-side at 116% 12%, rgba(255,255,255,0.51) , var(--greeney) 89%);
 
 }
 
