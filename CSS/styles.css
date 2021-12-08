@@ -63,7 +63,6 @@ h5 {
 
 h1, h2 {
   font-weight:700;
-  font-family: Helvetica, sans-serif;
 }
 
 p {
@@ -273,7 +272,7 @@ figure {
 
 .work {
   background-color: var(--lime);
-  background-image: radial-gradient(farthest-side at 83% 16%, rgba(255,255,255,0.68) , var(--lime) 90%);
+  /* background-image: radial-gradient(farthest-side at 83% 16%, rgba(255,255,255,0.68) , var(--lime) 90%); */
 }
 
 .job-description {
@@ -315,15 +314,21 @@ figure {
 }
 .projects {
   background-color: var(--greeney);
-  background-image: radial-gradient(farthest-side at 109% 17%, rgba(255,255,255,0.48) , var(--greeney) 77%);
+  background-image: radial-gradient(farthest-side at 117% 11%, rgba(255,255,255,0.51) , var(--greeney) 89%);
 
 }
 
+/**********  Projects **********/
+.head-highlight {
+  color: white;
+}
 
-
+.proj-nodec:hover {
+  text-decoration: none;
+  text-shadow: 5px 5px 7px var(--violet);
+}
 /**********  Education  **********/
 .h-style {
-  font-family: Helvetica, sans-serif;
   font-size: 1.17em;
   font-weight: 600;
 }
@@ -342,7 +347,7 @@ p + h3 {
  }
 
 .education {
-  background: linear-gradient(rgba(237,242,230,0.25),rgba(58,79,65,0.4)),
+  background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
   url(../images/mountaintop-education.jpg) no-repeat fixed;
   background-size: cover;
 }
@@ -399,7 +404,7 @@ li.courses a:hover {
   background: url("../images/check-mark-blue-svg.svg") no-repeat center left;
   margin: 0 15px 10px 15px;
   padding-left: 25px;
-  text-shadow: 2px 3px 6px #f7f7f2;
+  /* text-shadow: 2px 3px 6px #f7f7f2; */
 }
 
 .cal {
