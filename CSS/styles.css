@@ -164,7 +164,7 @@ nav div {
 
 nav a {
   display: inline-block;
-  padding: 5px 17px !important;
+  padding: 0.5rem 19px !important;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
@@ -626,7 +626,7 @@ a.ed-link:hover {
 
 @media (min-width: 920px) {
  .col-narrow {
-   width: 30%;
+   width: 28%;
    float: left;
    margin: 0;
 }
