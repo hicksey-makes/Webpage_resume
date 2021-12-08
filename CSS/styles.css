@@ -7,11 +7,14 @@ html {
 :root {
   --gainsboro: #d7dae5;
   --blue-pewter: #859ca0;
+  --blue-munsell: #3891A6;
   --lime: #c7fc49;
   --light-lime: rgba(199, 252, 73, 0.1);
   --violet: #30265c;
   --ivory: #edf2e6;
   --brown: #855E23;
+  --greeney: #3A4F41;
+  --indian: #db5461;
   --teal: #567d91;
   --dark-violet: #1E183A;
   --danger: #C73A3E;
@@ -171,7 +174,7 @@ nav a {
 nav a:hover, .active {
   color: whitesmoke;
   text-shadow: none;
-  background-color: var(--teal);
+  background-color: var(--blue-munsell);
 }
 
 .brand {
@@ -216,8 +219,8 @@ footer {
 }
 
 .content-info a {
-  color: var(--brown);
-  background-color: var(--gainsboro);
+  color: var(--greeney);
+  background-color: var(--lime);
   padding: 5px 15px;
   margin-top: 10px;
   margin-right: 15px;
@@ -227,10 +230,10 @@ footer {
  }
 
  .content-info a:hover {
-   color: var(--ivory);
+   color: var(--lime);
    box-shadow: none;
    border: 1px solid var(--dark-violet);
-   background-color: var(--teal);
+   background-color: var(--greeney);
  }
 
  #Contact h2 {
@@ -239,7 +242,7 @@ footer {
 
  header, footer {
    background-color: var(--ivory);
-   color: var(--brown);
+   color: #3A4F41;
 }
 
 #ski-link {
@@ -307,8 +310,8 @@ h3 ~ p {
   margin-left: 20px;
 }
 .projects {
-  background-color: var(--blue-pewter);
-  background-image: radial-gradient(farthest-side at 83% 126%, rgba(255,255,255,0.68) , var(--blue-pewter) 90%);
+  background-color: var(--greeney);
+  background-image: radial-gradient(farthest-side at 109% 17%, rgba(255,255,255,0.48) , var(--greeney) 77%);
 
 }
 
@@ -334,7 +337,7 @@ p + h3 {
  }
 
 .education {
-  background: linear-gradient(var(--light-blue), var(--bistre)),
+  background: linear-gradient(rgba(237,242,230,0.25),rgba(58,79,65,0.4)),
   url(../images/mountaintop-education.jpg) no-repeat fixed;
   background-size: cover;
 }
