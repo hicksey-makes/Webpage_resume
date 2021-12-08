@@ -27,7 +27,7 @@ html {
 body {
     background-color: var(--blue-pewter);
     color: black;
-    font-family: Garamond, serif;
+    font-family: 'GFS Didot', serif;
     font-size: 18px;
     margin: 0;
     position: relative;
@@ -72,7 +72,6 @@ a {
   background: none;
   color: var(--gainsboro);
   text-decoration: none;
-  text-shadow: 2px 1px 3px var(--violet), 2px 2px 2px var(--teal);
 }
 
 .content-wrap {
@@ -166,7 +165,7 @@ nav a {
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Acme', sans-serif;
+  /* font-family: 'Acme', sans-serif; */
 }
 
 nav a:hover, .active {
@@ -378,7 +377,6 @@ li.sidebside:first-of-type {
 
 a.ed-link {
   color: var(--violet);
-  text-shadow: 2px 2px 7px var(--ivory);
 }
 
 li.courses a:hover {
