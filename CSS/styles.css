@@ -263,6 +263,10 @@ h3 ~ p {
   margin: 0;
 }
 
+figure {
+  margin-bottom: 0;
+}
+
 .Ucase {
   text-transform: uppercase;
 }
@@ -314,6 +318,7 @@ h3 ~ p {
   background-image: radial-gradient(farthest-side at 109% 17%, rgba(255,255,255,0.48) , var(--greeney) 77%);
 
 }
+
 
 
 /**********  Education  **********/
@@ -379,11 +384,13 @@ li.sidebside:first-of-type {
 }
 
 a.ed-link {
-  color: var(--violet);
+  color: var(--lime);
+  text-shadow: 2px 2px 5px var(--violet);
 }
 
 li.courses a:hover {
-  color: var(--lime)
+  color: black;
+  text-shadow: none;
 }
 
 .skill-badge {
@@ -630,8 +637,8 @@ a.ed-link:hover {
 @media (min-width: 992px) {
  .container2 {
    display: grid;
-   grid-template-columns: minmax(250px, 400px) minmax(300px, 1fr);
-   grid-gap: 10px;
+   grid-template-columns: minmax(250px, 400px) minmax(295px, 1fr);
+   grid-gap: 7px;
    }
 }
 
