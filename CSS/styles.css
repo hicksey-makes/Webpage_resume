@@ -603,7 +603,7 @@ a.ed-link:hover {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media all and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .education {
     background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
     url(../images/mountain_scene2055.jpg) no-repeat fixed;
@@ -611,7 +611,7 @@ a.ed-link:hover {
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .education {
     background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
     url(../images/mountain5721.jpg) no-repeat fixed;
