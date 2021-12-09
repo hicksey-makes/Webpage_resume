@@ -603,7 +603,11 @@ a.ed-link:hover {
   }
 }
 
-@media all and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
   .education {
     background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
     url(../images/mtn_retport_tab.jpg) no-repeat fixed;
@@ -611,7 +615,11 @@ a.ed-link:hover {
   }
 }
 
-@media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
   .education {
     background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
     url(../images/mtn_retland_tab.jpg) no-repeat fixed;
@@ -619,13 +627,32 @@ a.ed-link:hover {
   }
 }
 
-@media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media only screen
+  and (min-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  .education {
+    background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
+    url(../images/mtn_ipadpro_port.jpg) no-repeat fixed center 80%;
+    background-size: cover;
+  }
+} */
+
+/* @media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .education {
+    background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
+    url(../images/mtn_retland_tab.jpg) no-repeat fixed;
+    background-size: contain;
+  }
+} */
+
+/* @media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .education {
     background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
     url(../images/mtn_retina_desktop.jpg) no-repeat fixed;
     background-size: cover;
   }
-}
+} */
 
 @media (max-width: 540px) {
   .column {
