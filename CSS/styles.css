@@ -347,7 +347,7 @@ p + h3 {
 
 .education {
   background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
-  url(../images/mountain_scene2055.jpg) center 40% no-repeat fixed;
+  url(../images/mountaintop-education.jpg) center 65% no-repeat fixed;
   background-size: cover;
 }
 
@@ -601,10 +601,13 @@ a.ed-link:hover {
   .img-att {
     margin-top: 23px;
   }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 767px) {
   .education {
     background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
-    url(../images/mountaintop-education.jpg) center 65% no-repeat fixed;
-    background-size: cover;
+    url(../images/mountain_scene2055.jpg) center 45% no-repeat fixed;
+    
   }
 }
 
