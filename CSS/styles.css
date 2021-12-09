@@ -5,7 +5,6 @@ html {
 }
 
 :root {
-  --gainsboro: #D3DED7;
   --blue-pewter: #859ca0;
   --blue-munsell: #3891A6;
   --blue-middle: #6dc9de;
@@ -243,19 +242,6 @@ footer {
    color: #3A4F41;
 }
 
-#ski-link {
-    /* color: var(--violet); */
-    text-shadow: 5px 4px 13px var(--brown), 1px 1px 6px var(--violet);
-    margin-left: 38px;
-}
-
-#ski-link:hover {
-  text-shadow: 3px -3px 19px var(--violet);
-  color: lime;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 /**********  Work Experience  **********/
 h3 ~ p {
   margin: 0;
@@ -301,7 +287,6 @@ figure {
 .work-modals {
   margin-left: 25px;
   display: inline-block;
-  /* object-fit: cover; */
 }
 
 .tnail-caps {
@@ -311,13 +296,14 @@ figure {
 .tnail-center {
   margin-left: 20px;
 }
+
+/**********  Projects **********/
 .projects {
   background-color: var(--greeney);
   background-image: radial-gradient(farthest-side at 116% 12%, rgba(255,255,255,0.51) , var(--greeney) 89%);
 
 }
 
-/**********  Projects **********/
 .head-highlight {
   color: white;
 }
@@ -326,6 +312,7 @@ figure {
   text-decoration: none;
   text-shadow: 5px 5px 7px var(--violet);
 }
+
 /**********  Education  **********/
 .h-style {
   font-size: 1.17em;
@@ -403,16 +390,12 @@ li.courses a:hover {
   background: url("../images/check-mark-blue-svg.svg") no-repeat center left;
   margin: 0 15px 10px 15px;
   padding-left: 25px;
-  /* text-shadow: 2px 3px 6px #f7f7f2; */
-}
-
-.cal {
-  color: var(--teal);
 }
 
 .tut-prog {
   margin-left: -15px;
 }
+
 a.ed-link:hover {
   text-decoration: none;
   color: var(--violet);
@@ -603,7 +586,11 @@ a.ed-link:hover {
   }
 }
 
-@media all and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
   .education {
     background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
     url(../images/mtn_retport_tab.jpg) no-repeat fixed;
@@ -611,7 +598,11 @@ a.ed-link:hover {
   }
 }
 
-@media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
   .education {
     background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
     url(../images/mtn_retland_tab.jpg) no-repeat fixed;
@@ -619,13 +610,32 @@ a.ed-link:hover {
   }
 }
 
-@media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media only screen
+  and (min-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  .education {
+    background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
+    url(../images/mtn_ipadpro_port.jpg) no-repeat fixed center 80%;
+    background-size: cover;
+  }
+} */
+
+/* @media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .education {
+    background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
+    url(../images/mtn_retland_tab.jpg) no-repeat fixed;
+    background-size: contain;
+  }
+} */
+
+/* @media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .education {
     background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
     url(../images/mtn_retina_desktop.jpg) no-repeat fixed;
     background-size: cover;
   }
-}
+} */
 
 @media (max-width: 540px) {
   .column {
