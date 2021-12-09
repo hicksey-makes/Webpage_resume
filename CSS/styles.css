@@ -606,8 +606,8 @@ a.ed-link:hover {
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 767px) {
   .education {
     background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
-    url(../images/mountain_scene2055.jpg) center 45% no-repeat fixed;
-    
+    url(../images/mountain_scene2055.jpg) contain center 45% no-repeat fixed;
+
   }
 }
 
