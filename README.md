@@ -1,16 +1,17 @@
 # Webpage Resume
 
-**My webpage-resume highlighting responsive design using CSS grid!**
+**My webpage-resume highlighting my projects, work experience and education in a responsive design!**
 
 ## Steps Involved
-* Plan the grid sections' behavior before applying them to the html.
-* Create hidden modals that appear on-click with the display property, CSS animations and Javascript. 
-* Utilize media queries to maintain responsive layout along with the grid.  
-* Highlight nav section that has been clicked by dynamically updating class on element.
+* Blueprint the website mobile, tablet and desktop layouts prior to developing.
+* Create hidden image modals that appear on thumbnail image on-click. 
+* Create a collapsible nav with hamburger menu for mobile viewports.
+* Auto update highlighted nav tab based on scroll position.
+* Create a download button function that converts the webpage contents to pdf for download.  
 
 ## Next Steps
-* Update education section with new courses and experience.
-* Add bootstrap plugin ScrollSpy to automatically update nav based on scroll position. 
+* Bootstrap carousel of work history/projects screenshots.
+* Modern colors.
 
 ## Links
 View my github userpage:
