@@ -6,6 +6,7 @@
 * Blueprint the website mobile, tablet and desktop layouts prior to developing.
 * Create hidden image modals that appear on thumbnail image on-click. 
 * Create a collapsible nav with hamburger menu for mobile viewports.
+* Auto update highlighted nav tab based on scroll position.
 * Create a download button function that converts the webpage contents to pdf for download.  
 
 ## Next Steps
