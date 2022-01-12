@@ -332,9 +332,9 @@ p + h3 {
   clear: left;
  }
 
-.education {
+.text {
   background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
-  url(../images/mountaintop-education.jpg) center 65% no-repeat fixed;
+  url(../images/background/mountaintop-education.jpg) center 65% no-repeat fixed;
   background-size: cover;
 }
 
@@ -365,7 +365,7 @@ ul.shrink1 h5 {
 .sidebside {
   float: left;
   list-style: none;
-  background: url("../images/check-mark-blue-svg.svg") no-repeat center left;
+  background: url("../images/edu/check-mark-blue-svg.svg") no-repeat center left;
   margin: 0 15px 10px 15px;
   padding-left: 25px;
 }
@@ -387,7 +387,7 @@ li.courses a:hover {
 .skill-badge {
   float: left;
   list-style-type: none;
-  background: url("../images/check-mark-blue-svg.svg") no-repeat center left;
+  background: url("../images/edu/check-mark-blue-svg.svg") no-repeat center left;
   margin: 0 15px 10px 15px;
   padding-left: 25px;
 }
@@ -585,57 +585,181 @@ a.ed-link:hover {
     margin-top: 23px;
   }
 }
+/***   Experimentation with JavaScript scroll fix   ***/
 
-@media only screen
-  and (min-device-width: 768px)
+/***  Media Queries   ***/
+@media only screen and (min-device-width: 768px)
   and (max-device-width: 1024px)
+  /* and (min--moz-device-pixel-ratio: 2) */
   and (-webkit-min-device-pixel-ratio: 2)
+  /* and (-o-min-device-pixel-ratio: 2/1) */
+  /* and (min-device-pixel-ratio: 2) */
+  /* and (min-resolution: 120dpi) */
   and (orientation: portrait) {
-  .education {
-    background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
-    url(../images/mtn_retport_tab.jpg) no-repeat fixed;
-    background-size: contain;
-  }
+
+    .e-with-fixed-bg {
+      width: 100%;
+      height: 100%;
+      /* Important */
+      position: relative;
+    }
+    .bg-wrap {
+      clip: rect(0, auto, auto, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .bg {
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-image: url(../images/background/55x26snow.jpg);
+      transform: translateZ(0);
+      will-change: transform;
+    }
+    .text {
+      color: black;
+      z-index: 2;
+      position: relative;
+      background: none;
+    }
+    .e-container {
+      z-index: 1;
+      color: white;
+      background: transparent;
+      font-size: 25px;
+    }
+    /*
+   .education {
+     background: linear-gradient(rgba(237,242,230,0.2),rgba(237,242,230,0.2)),
+     url(../images/background/55x26snow.jpg);
+     background-position: 55% 50%;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-origin: content-box; */
+   }
 }
 
-@media only screen
-  and (min-device-width: 768px)
+@media only screen and (min-device-width: 912px)
   and (max-device-width: 1024px)
+  /* and (min--moz-device-pixel-ratio: 2) */
   and (-webkit-min-device-pixel-ratio: 2)
+  /* and (-o-min-device-pixel-ratio: 2/1) */
+  /* and (min-device-pixel-ratio: 2) */
+  /* and (min-resolution: 120dpi) */
+  and (orientation: portrait) {
+    .e-with-fixed-bg {
+      width: 100%;
+      height: 100%;
+      /* Important */
+      position: relative;
+    }
+    .bg-wrap {
+      clip: rect(0, auto, auto, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .bg {
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-image: url(../images/background/55x26snow.jpg);
+      transform: translateZ(0);
+      will-change: transform;
+    }
+    .text {
+      color: black;
+      z-index: 2;
+      position: relative;
+      background: none;
+    }
+    .e-container {
+      z-index: 1;
+      color: white;
+      background: transparent;
+      font-size: 25px;
+    }
+    /*
+  .education {
+    background: linear-gradient(rgba(237,242,230,0.2),rgba(237,242,230,0.2)),
+    url(../images/background/55x26snow.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: 55% 50%;
+  }*/
+}
+
+@media only screen and (min-device-width: 768px)
+  and (max-device-width: 1280px)
+  /* and (min--moz-device-pixel-ratio: 2) */
+  and (-webkit-min-device-pixel-ratio: 2)
+  /* and (-o-min-device-pixel-ratio: 2/1) */
+  /* and (min-device-pixel-ratio: 2) */
+  /* and (min-resolution: 120dpi) */
   and (orientation: landscape) {
+    .e-with-fixed-bg {
+      width: 100%;
+      height: 100%;
+      /* Important */
+      position: relative;
+    }
+    .bg-wrap {
+      clip: rect(0, auto, auto, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .bg {
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-image: url(../images/background/26x16snow.jpg);
+      transform: translateZ(0);
+      will-change: transform;
+    }
+    .text {
+      color: black;
+      z-index: 2;
+      position: relative;
+      background: none;
+    }
+    .e-container {
+      z-index: 1;
+      color: white;
+      background: transparent;
+      font-size: 25px;
+    }
+    /*
   .education {
-    background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
-    url(../images/mtn_retland_tab.jpg) no-repeat fixed;
-    background-size: contain;
-  }
+    background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.1)),
+    url(../images/background/26x16snow.jpg) no-repeat fixed;
+    background-size: cover;
+  }*/
 }
-
-/* @media only screen
-  and (min-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-  .education {
-    background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
-    url(../images/mtn_ipadpro_port.jpg) no-repeat fixed center 80%;
-    background-size: cover;
-  }
-} */
-
-/* @media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .education {
-    background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
-    url(../images/mtn_retland_tab.jpg) no-repeat fixed;
-    background-size: contain;
-  }
-} */
-
-/* @media all and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  .education {
-    background: linear-gradient(rgba(237,242,230,0.1),rgba(58,79,65,0.4)),
-    url(../images/mtn_retina_desktop.jpg) no-repeat fixed;
-    background-size: cover;
-  }
-} */
 
 @media (max-width: 540px) {
   .column {
