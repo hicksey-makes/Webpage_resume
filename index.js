@@ -179,7 +179,7 @@ $('.navbar li a').click(function(event) {
 $("#PrintNow").on("click", function () {
             var divContents = $("#html-page").html();
             console.log(divContents.indexOf(`<div id="footStuff">`));
-            var contentToPrint = divContents.substring(2220, 22385);
+            var contentToPrint = divContents.substring(2220, 23335);
             console.log(contentToPrint);
             var printWindow = window.open('', '', 'height=400,width=800');
             printWindow.document.write('<html><head><title>Sam-H-Resume</title>');
