@@ -364,11 +364,6 @@ p + h3 {
   font-weight: bold;
 }
 
-.bolder {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
 .p-shad {
   box-shadow: 1px 1px 7px var(--violet);
 }
@@ -663,6 +658,10 @@ a.ed-link:hover {
       background: transparent;
       font-size: 25px;
     }
+    .bolder {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
     /*
    .education {
      background: linear-gradient(rgba(237,242,230,0.2),rgba(237,242,230,0.2)),
@@ -725,6 +724,10 @@ a.ed-link:hover {
       background: transparent;
       font-size: 25px;
     }
+    .bolder {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
     /*
   .education {
     background: linear-gradient(rgba(237,242,230,0.2),rgba(237,242,230,0.2)),
@@ -734,7 +737,8 @@ a.ed-link:hover {
   }*/
 }
 
-@media only screen and (max-device-width: 800px)
+@media only screen and (min-device-width: 712px)
+and (max-device-width: 800px)
   /* and (min--moz-device-pixel-ratio: /2) */
   and (-webkit-min-device-pixel-ratio: 2)
   /* and (-o-min-device-pixel-ratio: 2/1) */
@@ -782,6 +786,10 @@ a.ed-link:hover {
       background: transparent;
       font-size: 25px;
     }
+    .bolder {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
     /*
    .education {
      background: linear-gradient(rgba(237,242,230,0.2),rgba(237,242,230,0.2)),
@@ -794,7 +802,7 @@ a.ed-link:hover {
      -o-background-size: cover;
      background-origin: content-box; */
    }
-}
+
 
 @media only screen and (min-device-width: 768px)
   and (max-device-width: 1280px)
@@ -843,6 +851,10 @@ a.ed-link:hover {
       color: white;
       background: transparent;
       font-size: 25px;
+    }
+    .bolder {
+      font-size: 1.25rem;
+      font-weight: 600;
     }
     /*
   .education {
@@ -898,6 +910,10 @@ a.ed-link:hover {
       color: white;
       background: transparent;
       font-size: 25px;
+    }
+    .bolder {
+      font-size: 1.25rem;
+      font-weight: 600;
     }
     /*
   .education {
