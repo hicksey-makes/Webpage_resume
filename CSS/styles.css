@@ -303,7 +303,7 @@ figure {
 /**********  Projects **********/
 .projects {
   background-color: var(--greeney);
-  background-image: radial-gradient(farthest-side at 116% 12%, rgba(255,255,255,0.51) , var(--greeney) 89%);
+  background-image: radial-gradient(farthest-side at 100% 12%, rgba(255,255,255,0.21) , var(--greeney) 79%);
 
 }
 
