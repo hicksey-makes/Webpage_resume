@@ -32,6 +32,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* second certificate image */
@@ -40,6 +41,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* third certificate image */
@@ -48,6 +50,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* fourth certificate image */
@@ -56,6 +59,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* fifth certificate image */
@@ -64,6 +68,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* sixth certificate image */
@@ -72,6 +77,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* seventh certificate image */
@@ -80,6 +86,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* eighth certificate image */
@@ -88,6 +95,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* ninth(uber) certificate image */
@@ -96,6 +104,7 @@ img1.onclick = function() {
   modal2.style.display = "block";
   modalImgUb.src = this.src;
   captionText2.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* tenth certificate image */
@@ -104,6 +113,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* eleventh certificate image */
@@ -112,6 +122,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* twelth certificate image */
@@ -120,6 +131,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* thirteenth certificate image */
@@ -128,6 +140,7 @@ img1.onclick = function() {
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* fourteenth certificate image */
@@ -136,6 +149,7 @@ img1.onclick = function() {
   modal3.style.display = "block";
   modalImgCFbefore.src = this.src;
   captionText3.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 
 /* fifteenth certificate image */
@@ -144,6 +158,7 @@ img1.onclick = function() {
   modal4.style.display = "block";
   modalImgCFafter.src = this.src;
   captionText4.innerHTML = this.title;
+  navigation.style.zIndex = 2;
 }
 /* Get the <span> element that closes the modal */
 var span1 = document.getElementsByClassName("exit")[0];
@@ -154,18 +169,22 @@ var span4 = document.getElementsByClassName("exit4")[0];
 /* close the modal onclick of the <span> x */
 span1.onclick = function() {
   modal1.style.display = "none";
+  navigation.style.zIndex = 3;
 }
 
 span2.onclick = function() {
   modal2.style.display = "none";
+  navigation.style.zIndex = 3;
 }
 
 span3.onclick = function() {
   modal3.style.display = "none";
+  navigation.style.zIndex = 3;
 }
 
 span4.onclick = function() {
   modal4.style.display = "none";
+  navigation.style.zIndex = 3;
 }
 
 var offset = 0;
@@ -189,3 +208,15 @@ $("#PrintNow").on("click", function () {
             printWindow.document.close();
             printWindow.print();
         });
+
+
+  let modes = document.querySelectorAll(".modal1");
+  console.log(modes);
+
+  let nav = document.querySelector("#myNav");
+  [...modes].forEach(mode => {
+    console.log(mode.style);
+    if (mode.style.display === "block") {
+      console.log("success");
+    }
+  })
