@@ -459,6 +459,7 @@ a.ed-link:hover {
   height: 100%;
   overflow: auto;
   background-color: var(--violet);
+  z-index: 4;
 }
 
 /*****  Modal Content (Image) *****/
