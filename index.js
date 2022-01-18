@@ -173,6 +173,15 @@ img1.onclick = function() {
   captionText5.innerHTML = this.title;
   navigation.style.zIndex = 2;
 }
+
+/* React Tutorial App image */
+var img1 = document.getElementById('img-react');
+img1.onclick = function() {
+  modal5.style.display = "block";
+  modalImgjavaS.src = this.src;
+  captionText5.innerHTML = this.title;
+  navigation.style.zIndex = 2;
+}
 /* Get the <span> element that closes the modal */
 var span1 = document.getElementsByClassName("exit")[0];
 var span2 = document.getElementsByClassName("exit2")[0];
