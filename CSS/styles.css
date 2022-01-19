@@ -634,11 +634,15 @@ a.ed-link:hover {
   .img-att {
     margin-top: 23px;
   }
+  .contain {
+    min-width: 0;
+  }
 }
 
-/***  Media Queries   ***/
+/***  Retina Display Media Queries   ***/
+
 @media only screen and (min-device-width: 768px)
-  and (max-device-width: 1024px)
+  /* and (max-device-width: 1024px) */
   /* and (min--moz-device-pixel-ratio: /2) */
   and (-webkit-min-device-pixel-ratio: 2)
   /* and (-o-min-device-pixel-ratio: 2/1) */
