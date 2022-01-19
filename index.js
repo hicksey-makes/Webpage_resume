@@ -26,6 +26,10 @@ var modal4 = document.getElementById('imgModal4');
 var modalImgCFafter = document.getElementById('img-clickf-a');
 var captionText4 = document.getElementById('caption4');
 
+var modal5 = document.getElementById('imgModal5');
+var modalImgjavaS = document.getElementById('img-javas');
+var captionText5 = document.getElementById('caption5');
+
 /* get first certificate image and insert in modal - use its "title" text as a caption */
 var img1 = document.getElementById('img-first');
 img1.onclick = function() {
@@ -160,11 +164,30 @@ img1.onclick = function() {
   captionText4.innerHTML = this.title;
   navigation.style.zIndex = 2;
 }
+
+/* JavaScript Online image */
+var img1 = document.getElementById('img-javascript');
+img1.onclick = function() {
+  modal5.style.display = "block";
+  modalImgjavaS.src = this.src;
+  captionText5.innerHTML = this.title;
+  navigation.style.zIndex = 2;
+}
+
+/* React Tutorial App image */
+var img1 = document.getElementById('img-react');
+img1.onclick = function() {
+  modal5.style.display = "block";
+  modalImgjavaS.src = this.src;
+  captionText5.innerHTML = this.title;
+  navigation.style.zIndex = 2;
+}
 /* Get the <span> element that closes the modal */
 var span1 = document.getElementsByClassName("exit")[0];
 var span2 = document.getElementsByClassName("exit2")[0];
 var span3 = document.getElementsByClassName("exit3")[0];
 var span4 = document.getElementsByClassName("exit4")[0];
+var span5 = document.getElementsByClassName("exit5")[0];
 
 /* close the modal onclick of the <span> x */
 span1.onclick = function() {
@@ -187,6 +210,11 @@ span4.onclick = function() {
   navigation.style.zIndex = 3;
 }
 
+span5.onclick = function() {
+  modal5.style.display = "none";
+  navigation.style.zIndex = 3;
+}
+
 var offset = 0;
 
 $('.navbar li a').click(function(event) {
@@ -198,7 +226,7 @@ $('.navbar li a').click(function(event) {
 $("#PrintNow").on("click", function () {
             var divContents = $("#html-page").html();
             console.log(divContents.indexOf(`<div id="footStuff">`));
-            var contentToPrint = divContents.substring(2220, 23335);
+            var contentToPrint = divContents.substring(2220, 24404);
             console.log(contentToPrint);
             var printWindow = window.open('', '', 'height=400,width=800');
             printWindow.document.write('<html><head><title>Sam-H-Resume</title>');

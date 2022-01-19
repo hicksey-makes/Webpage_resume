@@ -447,6 +447,23 @@ a.ed-link:hover {
   box-shadow: 0 0 2px 1px black;
 }
 
+.level {
+  margin-bottom: -10px;
+  margin-top: 15px;
+}
+
+.grid {
+  display: inline-grid;
+  grid-template-columns: 180px 100px;
+  grid-gap: 5px;
+  list-style-type: circle;
+}
+
+.figure {
+  margin-top: -10px;
+  margin-bottom: 5px;
+  margin-left: -5px;
+}
 /**********  The Modal  **********/
 .modal1 {
   display: none;
@@ -484,8 +501,14 @@ a.ed-link:hover {
   max-height: 686px;
 }
 
+.modal-inner5 {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 900px;
+}
 /*****  Caption of Modal Image  *****/
-#caption, #caption2, #caption3, #caption4 {
+#caption, #caption2, #caption3, #caption4, #caption5 {
   margin: auto;
   display: block;
   width: 80%;
@@ -498,7 +521,7 @@ a.ed-link:hover {
 }
 
 /*****  Add Animation  *****/
-.modal-inner1, .modal-inner2, .modal-inner3, #caption, #caption2, #caption3, #caption4 {
+.modal-inner1, .modal-inner2, .modal-inner3, .modal-inner4, .modal-inner5, #caption, #caption2, #caption3, #caption4, #caption5 {
   animation-name: zoom;
   animation-duration: 1.3s;
 }
@@ -509,7 +532,7 @@ a.ed-link:hover {
 }
 
 /*****  Close Button  *****/
-.exit, .exit2, .exit3, .exit4 {
+.exit, .exit2, .exit3, .exit4, .exit5 {
   position: absolute;
   top: 20px;
   right: 35px;
@@ -519,7 +542,7 @@ a.ed-link:hover {
   transition: 0.3s;
 }
 
-.exit:hover, .exit:focus, .exit2:hover, .exit2:focus, .exit3:hover, .exit3:focus, .exit4:hover, .exit4:focus {
+.exit:hover, .exit:focus, .exit2:hover, .exit2:focus, .exit3:hover, .exit3:focus, .exit4:hover, .exit4:focus, .exit5:hover, .exit5:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -611,11 +634,15 @@ a.ed-link:hover {
   .img-att {
     margin-top: 23px;
   }
+  .contain {
+    min-width: 0;
+  }
 }
 
-/***  Media Queries   ***/
+/***  Retina Display Media Queries   ***/
+
 @media only screen and (min-device-width: 768px)
-  and (max-device-width: 1024px)
+  /* and (max-device-width: 1024px) */
   /* and (min--moz-device-pixel-ratio: /2) */
   and (-webkit-min-device-pixel-ratio: 2)
   /* and (-o-min-device-pixel-ratio: 2/1) */
