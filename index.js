@@ -30,7 +30,7 @@ var modal5 = document.getElementById('imgModal5');
 var modalImgjavaS = document.getElementById('img-javas');
 var captionText5 = document.getElementById('caption5');
 
-/* get first certificate image and insert in modal - use its "title" text as a caption */
+/* get first certificate image and insert in modal - use its "title" text as a caption
 var img1 = document.getElementById('img-first');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -39,7 +39,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* second certificate image */
+/* second certificate image
 var img1 = document.getElementById('img-second');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -48,7 +48,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* third certificate image */
+/* third certificate image
 var img1 = document.getElementById('img-third');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -57,7 +57,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* fourth certificate image */
+/* fourth certificate image
 var img1 = document.getElementById('img-fourth');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -66,7 +66,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* fifth certificate image */
+/* fifth certificate image
 var img1 = document.getElementById('img-fifth');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -75,7 +75,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* sixth certificate image */
+/* sixth certificate image
 var img1 = document.getElementById('img-sixth');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -84,7 +84,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* seventh certificate image */
+/* seventh certificate image
 var img1 = document.getElementById('img-seventh');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -93,7 +93,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* eighth certificate image */
+/* eighth certificate image
 var img1 = document.getElementById('img-eighth');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -111,7 +111,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* tenth certificate image */
+/* tenth certificate image
 var img1 = document.getElementById('img-tenth');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -120,7 +120,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* eleventh certificate image */
+/* eleventh certificate image
 var img1 = document.getElementById('img-eleventh');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -129,7 +129,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* twelth certificate image */
+/* twelth certificate image
 var img1 = document.getElementById('img-twelth');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -138,7 +138,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* thirteenth certificate image */
+/* thirteenth certificate image
 var img1 = document.getElementById('img-thirteenth');
 img1.onclick = function() {
   modal1.style.display = "block";
@@ -146,8 +146,8 @@ img1.onclick = function() {
   captionText.innerHTML = this.title;
   navigation.style.zIndex = 2;
 }
-
-/* fourteenth certificate image */
+*/
+/* clickfunnels before image*/
 var img1 = document.getElementById('img-fourteenth');
 img1.onclick = function() {
   modal3.style.display = "block";
@@ -156,7 +156,7 @@ img1.onclick = function() {
   navigation.style.zIndex = 2;
 }
 
-/* fifteenth certificate image */
+/* clickfunnels after image*/
 var img1 = document.getElementById('img-fifteenth');
 img1.onclick = function() {
   modal4.style.display = "block";
