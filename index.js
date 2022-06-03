@@ -226,7 +226,7 @@ $('.navbar li a').click(function(event) {
 function handleDownloadClick() {
   var divContents = $("#html-page").html();
   console.log(divContents.indexOf(`<div id="footStuff">`));
-  var contentToPrint = divContents.substring(2220, 29644);
+  var contentToPrint = divContents.substring(2220, 25044);
   console.log(contentToPrint);
   var printWindow = window.open('', '', 'height=400,width=800');
   printWindow.document.write('<html><head><title>Sam-H-Resume</title>');
