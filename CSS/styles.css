@@ -397,8 +397,8 @@ li.sidebside:first-of-type {
 }
 
 a.ed-link {
-  color: var(--lime);
-  text-shadow: 2px 2px 5px var(--violet);
+  color: var(--indian);
+  text-shadow: none;
 }
 
 li.courses a:hover {
