@@ -223,20 +223,19 @@ $('.navbar li a').click(function(event) {
     scrollBy(0, -offset);
 });
 
-$("#PrintNow").on("click", function () {
-            var divContents = $("#html-page").html();
-            console.log(divContents.indexOf(`<div id="footStuff">`));
-            var contentToPrint = divContents.substring(2220, 25104);
-            console.log(contentToPrint);
-            var printWindow = window.open('', '', 'height=400,width=800');
-            printWindow.document.write('<html><head><title>Sam-H-Resume</title>');
-            printWindow.document.write('</head><body >');
-            printWindow.document.write(contentToPrint);
-            printWindow.document.write('</body></html>');
-            printWindow.document.close();
-            printWindow.print();
-        });
-
+function handleDownloadClick() {
+  var divContents = $("#html-page").html();
+  console.log(divContents.indexOf(`<div id="footStuff">`));
+  var contentToPrint = divContents.substring(2220, 29644);
+  console.log(contentToPrint);
+  var printWindow = window.open('', '', 'height=400,width=800');
+  printWindow.document.write('<html><head><title>Sam-H-Resume</title>');
+  printWindow.document.write('</head><body >');
+  printWindow.document.write(contentToPrint);
+  printWindow.document.write('</body></html>');
+  printWindow.document.close();
+  printWindow.print();
+}
 
   let modes = document.querySelectorAll(".modal1");
   console.log(modes);
