@@ -165,10 +165,11 @@ nav div {
 
 nav a {
   display: inline-block;
-  padding: 0.5rem 19px !important;
+  padding: 0.3rem 11px !important;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 1.3px;
   /* font-family: 'Acme', sans-serif; */
 }
 
@@ -1007,5 +1008,9 @@ and (max-device-width: 800px)
   }
   body {
     font-size: 19px;
+  }
+  nav a {
+    padding: 0.4rem 21px !important;
+    font-size: 1.2rem;
   }
 }
