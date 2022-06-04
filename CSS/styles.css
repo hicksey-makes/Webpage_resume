@@ -5,6 +5,7 @@ html {
 }
 
 :root {
+  --marigold: #f4ac32;
   --blue-pewter: #859ca0;
   --blue-munsell: #3891A6;
   --blue-middle: #6dc9de;
@@ -198,16 +199,16 @@ nav a:hover, .active {
   text-decoration: none;
   font-size: 17px;
   font-weight: 600;
-  color: var(--ivory);
+  color: var(--greeney);
   /* box-shadow: -2px 2px 10px var(--greeney); */
-  background-color: var(--greeney);
+  background-color: var(--marigold);
   display: inline-block;
   padding: 8px;
   text-shadow: none;
 }
 
 .btn:hover {
-  color: var(--greeney);
+  color: var(--marigold);
   background-color: var(--ivory);
   /* box-shadow: 2px 3px 4px var(--violet); */
   border: 1px solid var(--violet);
@@ -397,7 +398,7 @@ li.sidebside:first-of-type {
 }
 
 a.ed-link {
-  color: #f4ac32;
+  color: var(--marigold);
   text-shadow: none;
 }
 
@@ -420,7 +421,7 @@ li.courses a:hover {
 
 a.ed-link:hover {
   text-decoration: none;
-  color: var(--violet);
+  color: var(--greeney) !important;
 }
 
 #assess-label {
