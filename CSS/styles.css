@@ -337,9 +337,9 @@ p + h3 {
  }
 
 .text {
-  background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(../images/background/Snowy_Mountains_Range_in_New_South_Wales_Australia_Wallpaper.jpg);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.2)), url(../images/background/Snowy_Mountains_Range_in_New_South_Wales_Australia_Wallpaper.jpg);
   background-repeat: no-repeat;
-  background-position: 0% 55%;
+  background-position: 60% 85%;
   background-attachment: fixed;
   background-size: cover;
   /* text-shadow: 1px 2px 2px var(--ivory); */
@@ -397,7 +397,7 @@ li.sidebside:first-of-type {
 }
 
 a.ed-link {
-  color: var(--indian);
+  color: #f4ac32;
   text-shadow: none;
 }
 
