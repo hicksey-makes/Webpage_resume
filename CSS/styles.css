@@ -206,6 +206,7 @@ nav a:hover, .active {
   display: inline-block;
   padding: 8px;
   text-shadow: none;
+  padding: 10px 12px;
 }
 
 .btn:hover {
@@ -974,6 +975,9 @@ and (max-device-width: 800px)
 @media (max-width: 895px) {
   .sidebside {
     margin-left: 0px;
+  }
+  nav a {
+    font-size: 0.9rem;
   }
 }
 
