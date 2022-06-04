@@ -1014,7 +1014,7 @@ and (max-device-width: 800px)
     font-size: 19px;
   }
   nav a {
-    padding: 0.4rem 21px !important;
+    padding: 0.3rem 21px !important;
     font-size: 1.2rem;
   }
 }
