@@ -11,18 +11,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=GFS+Didot&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css" media="screen" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="index.js" defer></script>
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   </head>
   <body data-spy="scroll" data-target="#myNav" data-offset="25">
     <!-- Intro -->
     <div id="html-page">
     <header id="About">
         <!-- <a href="javascript:generatePDF()" class="btn download" download>Download PDF</a> -->
-        <button class="btn download" id="PrintNow">Download</button>
+        <button class="btn download" id="PrintNow" onclick="handleDownloadClick()"}>Download</button>
         <nav id="myNav" class="navbar navbar-expand-md navbar-fixed-top">
 
           <!-- Toggler/collapsibe Button -->
@@ -51,7 +58,7 @@
         </nav>
         <div class= "content-wrap heading">
           <div class="prof-pic">
-            <img class="profile" src="images/turo_Selfie-3.jpg" alt="Face Shot">
+            <img class="profile" src="images/turo_Selfie-3.jpg" alt="Sam headshot upclose">
           </div>
           <div class="missions">
             <h1>Sam Hicks</h1>
@@ -82,27 +89,27 @@
                     <li class="training">Received 100% satisfactory review.</li>
                   </ul>
                   <figure class="work-modals">
-                    <img class="cert-sm row tnail-center" id="img-fourteenth" src="./images/work/content_excees_herobg.jpg" title="QA Background Before" alt="Example work before" width="40" height="40">
+                    <img class="cert-sm row tnail-center" id="img-fourteenth" src="./images/work/content_excees_herobg.jpg" title="Work sample: QA responsive issue" alt="Hicksey-makes work sample before" width="40" height="40">
                     <figcaption class="tnail-caps">
-                      QA Responsive Issue
+                      Work sample: QA responsive issue
                     </figcaption>
                   </figure>
                   <!-- ClickFunnels before modal -->
                   <div id="imgModal3" class="modal1">
                     <span class="exit3">&times;</span>
-                    <img class="modal-inner3" id="img-clickf-b" alt="ClickFunnels QA before enlarged">
+                    <img class="modal-inner3" id="img-clickf-b">
                     <div id="caption3"></div>
                   </div>
                   <figure class="work-modals">
-                    <img class="cert-sm row tnail-center" id="img-fifteenth" src="./images/work/content_nomoreexcess.png" title="QA Background After" alt="Example work after" width="40" height="40">
+                    <img class="cert-sm row tnail-center" id="img-fifteenth" src="./images/work/content_nomoreexcess.png" title="Work sample: QA responsive fix" alt="Hicksey-makes work sample after" width="40" height="40">
                     <figcaption class="tnail-caps">
-                      QA Responsive Fix
+                      Work sample: QA responsive Fix
                     </figcaption>
                   </figure>
                   <!-- ClickFunnels after modal -->
                   <div id="imgModal4" class="modal1">
                     <span class="exit4">&times;</span>
-                    <img class="modal-inner3" id="img-clickf-a" alt="ClickFunnels QA after enlarged">
+                    <img class="modal-inner3" id="img-clickf-a">
                     <div id="caption4"></div>
                   </div>
             </div>
@@ -277,34 +284,26 @@
                     <li class="courses bolder">Programming Foundations: Fundamentals</li>
                     <li class="courses bolder">Bootstrap 4 Essential Training</li>
                     <li class="courses bolder">Creating Web Icons with SVG</li>
+                    <li class="courses bolder">Illustrator For Web Design</li>
                   </ul>
                 </div>
                 <!--- course certifications  --->
-                <div class="img-att row">
-                  <div class="column">
-                    <img class="cert-sm row p-shad" id="img-second" src="./images/learn_certs/git_esst.png" alt="Git Essential Training Course Certificate" title="Git Essential Training" width="80" height="55">
-                    <img class="cert-sm row p-shad" id="img-third" src="./images/learn_certs/python_esst.png" alt="Python Essential Training Course Certificate" title="Python Essential Training" width="80" height="55">
-                  </div>
-                  <div class="column">
-                    <img class="cert-sm row p-shad" id="img-first" src="./images/learn_certs/ecma_script6.png" alt="ECMA Script 6 Course Certificate" title="ECMAScript 6" width="80" height="55">
-                    <img class="cert-sm row p-shad" id="img-fourth" src="./images/learn_certs/react_esst.png" alt="React Essential Training Course Certificate" title="React Essential Training" width="80" height="55">
-                  </div>
-                  <div class="column">
-                    <img class="cert-sm row p-shad" id="img-fifth" src="./images/learn_certs/react_js_interface.png" alt="React.js: Building An Interface Course Certificate" title="React.js: Building An Interface" width="80" height="55">
-                    <img class="cert-sm row p-shad" id="img-sixth" src="./images/learn_certs/sass_esst.png" alt="Sass Essential Training Course Certificate" title="Sass Essential Training" width="80" height="55">
-                  </div>
-                  <div class="column">
-                    <img class="cert-sm row p-shad" id="img-seventh" src="./images/learn_certs/javascript_code_chall.png" alt="Javascript Code Challenges Course Certificate" title="JavaScript Code Challenges" width="80" height="55">
-                    <img class="cert-sm row p-shad" id="img-eighth" src="./images/learn_certs/vpn.png" alt="Learning VPN" title="Learning VPN" width="80" height="55">
-                  </div>
-                  <div class="column">
-                    <img class="cert-sm row p-shad" id="img-tenth" src="./images/learn_certs/creating_web_icons.png" alt="Creating Web Icons with SVG Course Certificate" title="Creating Web Icons with SVG" width="80" height="55">
-                    <img class="cert-sm row p-shad" id="img-eleventh" src="./images/learn_certs/UXFoundations_Access.png" alt="UX Foundations: Accessibility Course Certificate" title="UX Foundations: Accessibility" width="80" height="55">
-                  </div>
-                  <div class="column">
-                    <img class="cert-sm row p-shad" id="img-twelth" src="./images/learn_certs/javascript_ess_t.png" alt="JavaScript Essential Training Course Certificate" title="JavaScript Essential Training" width="80" height="55">
-                    <img class="cert-sm row p-shad frontcenter" id="img-thirteenth" src="./images/learn_certs/illustrator_for_web.png" alt="Illustrator for Web Course Certificate" title="Illustrator for Web" width="80" height="55">
-                  </div>
+                <div class="">
+                  <!-- Add images to <div class="fotorama"></div> -->
+                    <div class="fotorama" data-width="100%" data-ratio="600/400" data-click="true" data-swipe="true" data-allowfullscreen="true">
+                      <img src="images/learn_certs/git_esst.png" alt="Git Essential Training Course Certificate">
+                      <img src="images/learn_certs/python_esst.png" alt="Python Essential Training Course Certificate">
+                      <img src="images/learn_certs/javascript_ess_t.png" alt="JavaScript Essential Training Course Certificate">
+                      <img src="images/learn_certs/ecma_script6.png" alt="ECMAScript 6 Course Certificate">
+                      <img src="images/learn_certs/react_esst.png" alt="React Essential Training Course Certificate">
+                      <img src="images/learn_certs/react_js_interface.png" alt="React JS Interface Course Certificate">
+                      <img src="images/learn_certs/javascript_code_chall.png" alt="JavaScript Code Challenges Course Certificate">
+                      <img src="images/learn_certs/sass_esst.png" alt="Sass Essential Training Course Certificate">
+                      <img src="images/learn_certs/vpn.png" alt="Learning VPN Course Certificate">
+                      <img src="images/learn_certs/UXFoundations_Access.png" alt="UX Foundations Accessibility Course Certificate">
+                      <img src="images/learn_certs/creating_web_icons.png" alt="Creating Web Icons Course Certificate">
+                      <img src="images/learn_certs/illustrator_for_web.png" alt="Illustrator for Web Design Course Certificate">
+                    </div>
                 </div>
 
                 <!-- My Modal -->
@@ -324,7 +323,12 @@
                   </li>
                   <li class="skill-badge bolder">React.js
                   </li>
+                  <li class="skill-badge bolder">Front-End Development
+                  </li>
+                  <li class="skill-badge bolder">Wordpress
+                  </li>
                 </ul>
+
               </div>
 
               <!--- school 2 details  --->
@@ -340,14 +344,14 @@
                       <a class="ed-link" href="https://learnjavascript.online/app.html?id=2020" target="_blank">
                     Learn JavaScript</a>
                     <figure class="figure">
-                      <img class="cert-sm level tnail-center" id="img-javascript" src="./images/edu/learn_javascript.jpg" title="Learn JavaScript Course" alt="Learn JavaScript Course Completion" width="40" height="40">
+                      <img class="cert-sm level tnail-center" id="img-javascript" src="./images/edu/learn_javascript.jpg" title="Learn JavaScript Course" alt="Learn JavaScript course completion page" width="40" height="40">
                     </figure>
                     </li>
                     <li class="courses grid" title="https://react-tutorial.app">
                       <a class="ed-link" href="https://react-tutorial.app" target="_blank">
                     React Tutorial</a>
                     <figure class="figure">
-                      <img class="cert-sm level tnail-center" id="img-react" src="./images/edu/react-tutorial-app.jpg" title="React Tutorial App" alt="React Tutorial App Completion" width="40" height="40">
+                      <img class="cert-sm level tnail-center" id="img-react" src="./images/edu/react-tutorial-app.jpg" title="React Tutorial App" alt="React Tutorial course completion page" width="40" height="40">
                     </figure>
                     </li>
 
@@ -421,6 +425,7 @@
                 </ul>
               </div>
             </div>
+
             </div>
           </div>
         </div>
@@ -435,7 +440,7 @@
     <!--- Footer & contact info  --->
     <footer id="Contact">
         <div class="content-wrap">
-          <h2>Let's Keep in Touch!</h2>
+          <h2>Let's keep in touch!</h2>
         <!-- Social media and contact links. Add or remove any networks. -->
           <div class="content-info">
             <a href="mailto:email@example.com"><i class="fas fa-envelope"></i>
@@ -444,14 +449,14 @@
             <a href="https://www.linkedin.com/in/sam-hicks-74ba2aa/" target="_blank"><i class="fab fa-linkedin-in"></i>
             <span class="sr-only">LinkedIn
             </span></a>
-            <a href="https://twitter.com/SamSkcih"><i class="fab fa-twitter-square"></i>
+            <a href="https://twitter.com/SamSkcih" target="_blank"><i class="fab fa-twitter-square"></i>
             <span class="sr-only">Twitter
             </span></a>
             <a href="#About"><i class="fas fa-home"></i>
             <span class="sr-only">Home
             </span></a>
           </div>
-          <p>Copyright 2021 by Sam Hicks</p>
+          <p>Web Development by Sam Hicks (Hicksey-makes)</p>
         </div>
     </footer>
     </div>

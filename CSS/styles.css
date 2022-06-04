@@ -5,6 +5,7 @@ html {
 }
 
 :root {
+  --marigold: #f4ac32;
   --blue-pewter: #859ca0;
   --blue-munsell: #3891A6;
   --blue-middle: #6dc9de;
@@ -164,10 +165,11 @@ nav div {
 
 nav a {
   display: inline-block;
-  padding: 0.5rem 19px !important;
+  padding: 0.3rem 11px !important;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 1.2px;
   /* font-family: 'Acme', sans-serif; */
 }
 
@@ -198,18 +200,20 @@ nav a:hover, .active {
   text-decoration: none;
   font-size: 17px;
   font-weight: 600;
-  color: var(--blue-munsell);
-  box-shadow: -2px 2px 10px var(--greeney);
-  background-color: var(--ivory);
+  color: var(--greeney);
+  box-shadow: 0px 0px 9px var(--greeney);
+  background-color: var(--marigold);
   display: inline-block;
   padding: 8px;
   text-shadow: none;
+  padding: 10px 12px;
 }
 
 .btn:hover {
-  color: var(--ivory);
-  background-color: var(--violet);
-  box-shadow: 2px 3px 4px var(--violet);
+  color: var(--blue-munsell);
+  background-color: var(--ivory);
+  box-shadow: none;
+  border: 1px solid var(--violet);
 }
 
 
@@ -336,23 +340,23 @@ p + h3 {
  }
 
 .text {
-  background: var(--violet)
-  /* linear-gradient(rgba(58,79,65,0.1), rgba(58,79,65,0.1)), */
-  url(../images/background/mountaintop-education.jpg) 30% 55%
-  no-repeat fixed;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.2)), url(../images/background/Snowy_Mountains_Range_in_New_South_Wales_Australia_Wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-position: 60% 85%;
+  background-attachment: fixed;
   background-size: cover;
-  text-shadow: 1px 2px 2px var(--ivory);
+  /* text-shadow: 1px 2px 2px var(--ivory); */
 }
 
 .text h2 {
-  text-shadow: 3px 2px 5px var(--ivory);
+  /* text-shadow: 3px 2px 5px var(--ivory); */
 }
 
 .text h3 {
-  text-shadow: 2px 1px 4px var(--ivory);
+  /* text-shadow: 2px 1px 4px var(--ivory); */
 }
 .text h4, .text h5 {
-    text-shadow: 2px 1px 3px var(--ivory);
+    /* text-shadow: 2px 1px 3px var(--ivory); */
 }
 
 .tighten {
@@ -396,8 +400,8 @@ li.sidebside:first-of-type {
 }
 
 a.ed-link {
-  color: var(--lime);
-  text-shadow: 2px 2px 5px var(--violet);
+  color: var(--marigold);
+  text-shadow: none;
 }
 
 li.courses a:hover {
@@ -419,7 +423,7 @@ li.courses a:hover {
 
 a.ed-link:hover {
   text-decoration: none;
-  color: var(--violet);
+  color: var(--greeney) !important;
 }
 
 #assess-label {
@@ -972,6 +976,9 @@ and (max-device-width: 800px)
   .sidebside {
     margin-left: 0px;
   }
+  nav a {
+    font-size: 0.9rem;
+  }
 }
 
 @media (min-width: 920px) {
@@ -1005,5 +1012,9 @@ and (max-device-width: 800px)
   }
   body {
     font-size: 19px;
+  }
+  nav a {
+    padding: 0.3rem 21px !important;
+    font-size: 1.2rem;
   }
 }
