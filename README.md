@@ -1,17 +1,16 @@
 # Webpage Resume
 
-**My webpage-resume highlighting my projects, work experience and education in a responsive design!**
+**An HTML form of my resume (fully responsive)**
 
-## Steps Involved
-* Blueprint the website mobile, tablet and desktop layouts prior to developing.
-* Create hidden image modals that appear on thumbnail image on-click. 
-* Create a collapsible nav with hamburger menu for mobile viewports.
-* Auto update highlighted nav tab based on scroll position.
-* Create a download button function that converts the webpage contents to pdf for download.  
-
-## Next Steps
-* Bootstrap carousel of work history/projects screenshots.
-* Modern colors.
+## Strategy
+* Utilize a mobile-first strategy to create mobile, tablet and desktop layouts.
+* Pay close attention to HTML semantics and accessibility throughout.
+## Features
+* Collapsible nav with hamburger menu for mobile viewports.
+* Auto highlighting nav tabs based on page scroll position.
+* Hidden image modals to zoom images and certificates. 
+* Download button that converts the webpage contents to pdf.
+* High resolution retina specific background images.  
 
 ## Links
 View my github userpage:
