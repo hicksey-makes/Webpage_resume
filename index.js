@@ -107,7 +107,7 @@ var img1 = document.getElementById('img-ninth');
 img1.onclick = function() {
   modal2.style.display = "block";
   modalImgUb.src = this.src;
-  captionText2.innerHTML = this.title;
+  captionText2.innerHTML = this.alt;
   navigation.style.zIndex = 2;
 }
 
