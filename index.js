@@ -152,7 +152,7 @@ var img1 = document.getElementById('img-fourteenth');
 img1.onclick = function() {
   modal3.style.display = "block";
   modalImgCFbefore.src = this.src;
-  captionText3.innerHTML = this.alt;
+  // captionText3.innerHTML = this.alt;
   navigation.style.zIndex = 2;
 }
 
@@ -161,7 +161,7 @@ var img1 = document.getElementById('img-fifteenth');
 img1.onclick = function() {
   modal4.style.display = "block";
   modalImgCFafter.src = this.src;
-  captionText4.innerHTML = this.alt;
+  // captionText4.innerHTML = this.alt;
   navigation.style.zIndex = 2;
 }
 
