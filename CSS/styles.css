@@ -483,6 +483,21 @@ a.ed-link:hover {
   z-index: 4;
 }
 
+.fotorama__html {
+  background-color: transparent;
+  z-index: -1;
+}
+.fotorama__nav {
+  background-color: transparent;
+}
+
+.fotorama--fullscreen .fotorama__html {
+  background-color: var(--violet);
+}
+
+.fotorama--fullscreen .fotorama__nav {
+  background-color: var(--violet);
+}
 /*****  Modal Content (Image) *****/
 .modal-inner1 {
   margin: auto;
